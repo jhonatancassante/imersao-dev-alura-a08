@@ -86,7 +86,7 @@ function changeOption(id) {
     var spatk = document.querySelector("#spatk");
     var spdef = document.querySelector("#spdef");
     var speed = document.querySelector("#speed");
-    var newCheck = document.querySelector(id);
+    var newCheck = document.querySelector("#" + id);
 
     hp.checked = false;
     atk.checked = false;
