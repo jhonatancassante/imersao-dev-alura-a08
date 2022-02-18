@@ -172,7 +172,7 @@ body {
 }
 
 .content .cardAtribs input {
-    position: relative;
+    position: absolute;
     appearance: none;
 }
 
