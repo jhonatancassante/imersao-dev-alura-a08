@@ -82,7 +82,7 @@ function exibirCarta(carta, who) {
 }
 
 function atribSelected() {
-    if (newGame = true) {
+    if (newGame == true) {
         btnJogar.classList.remove("inactive");
     }
 }
