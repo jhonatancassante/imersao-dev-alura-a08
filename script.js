@@ -13,6 +13,7 @@ function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
         choice.innerHTML = '';
         choice.innerHTML = 'Clique em um atributo para escolher qual jogar...';
+        cleanSelectionAtrib();
 
         if (deck.length > 1) {
             cardMachine = sortearCarta();
@@ -144,6 +145,17 @@ function selectMachineAtrib(selectMachine) {
     speed.classList.remove("actived");
     selectMachine.classList.add("actived");
 
+    return;
+}
+
+function cleanSelectionAtrib() {
+    var atributo = document.getElementsByName("atributos");
+
+    for (var item of atributo) {
+        if (item.checked) {
+            item.checked = false;
+        }
+    }
     return;
 }
 
