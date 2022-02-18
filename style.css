@@ -166,23 +166,25 @@ body {
 .content .cardAtribs .atrib {
 	font-size: 14px;
 	font-weight: 500;
+	border: 2px solid transparent;
+	border-radius: 5px;
 }
 
 .content .cardAtribs .atrib:hover
 {
 	border: 2px solid #00ffe2;
 	font-weight: 600;
-	border-radius: 5px;
 }
 
 .content .cardAtribs input {
+	border: 2px solid transparent;
 	position: absolute;
+	border-radius: 5px;
 }
 
 .content .cardAtribs input:checked ~ div {
 	border: 2px solid #00ffe2;
 	font-weight: 600;
-	border-radius: 5px;
 }
 
 .container .footer {
