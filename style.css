@@ -17,6 +17,7 @@
     --card-img-color: blue;
     --card-atrib-color: blueviolet;
     --actived-atrib-color: red;
+    --mensage-bg-color: rgb(102, 0, 255, 75%);
 }
 
 body {
@@ -237,7 +238,7 @@ body {
     color: var(--font-color1);
     position: relative;
     border-radius: 10px;
-    background-color: rgb(102, 0, 255, 75%);
+    background-color: var(--mensage-bg-color);
 }
 
 .center {
