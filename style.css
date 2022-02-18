@@ -201,7 +201,7 @@ body {
     color: #ffffff;
     text-align: center;
     position: fixed;
-    z-index: 100;
+    z-index: 97;
     overflow: hidden;
 }
 
@@ -214,4 +214,10 @@ body {
     position: relative;
     border-radius: 10px;
     background-color: rgb(102, 0, 255, 92%);
+}
+
+.moldura-2 {
+    width: inherit;
+    height: inherit;
+    position: absolute;
 }

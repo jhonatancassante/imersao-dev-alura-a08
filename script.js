@@ -87,6 +87,17 @@ function jogar() {
 
         console.log("Teste " + atributoSelecionado);
 
+        var valorJogador = cardPlayer.atributos[atributoSelecionado];
+        var valorMaquina = cardMachine.atributos[atributoSelecionado];
+
+        if (valorJogador > valorMaquina) {
+            imprimirMensagem("Você venceu!");
+        } else if (valorJogador < valorMaquina) {
+            imprimirMensagem("Você perdeu!");
+        } else {
+            imprimirMensagem("Deu empate!");
+        }
+
         btnSortear.classList.remove("inactive");
         contentM.classList.remove("fliped");
         exibirCarta(cardMachine, ".machine");
@@ -103,4 +114,26 @@ function obtemAtributo() {
             return item.value;
         }
     }
+}
+
+function imprimirMensagem(mensagem) {
+    let tagBody = document.querySelector("body");
+
+    let tagSpan = document.createElement("span");
+    let tagDiv = document.createElement("div");
+
+    tagDiv.appendChild(tagSpan);
+    tagBody.appendChild(tagDiv);
+
+    tagDiv.classList.add("modal-mensagem");
+    tagDiv.classList.add("center");
+
+    tagSpan.innerHTML = mensagem;
+    tagSpan.classList.add("animate__animated");
+    tagSpan.classList.add("animate__heartBeat");
+    tagSpan.classList.add("center");
+
+    setTimeout(() => {
+        tagDiv.remove();
+    }, 2750);
 }
