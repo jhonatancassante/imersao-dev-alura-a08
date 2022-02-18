@@ -168,9 +168,11 @@ body {
 	font-weight: 500;
 }
 
-.content .cardAtribs .atrib:hover,
-.content .cardAtribs .atrib.active {
-	filter: drop-shadow(0 0 5px #00ffe2) drop-shadow(0 0 15px #00ffe2) drop-shadow(0 0 25px #00ffe2);
+.content .cardAtribs .atrib:hover
+{
+	border: 2px solid #00ffe2;
+	font-weight: 600;
+	border-radius: 5px;
 }
 
 .content .cardAtribs input {
@@ -179,9 +181,8 @@ body {
 }
 
 .content .cardAtribs input:checked ~ div {
-	filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 15px #f00);
+	border: 2px solid #00ffe2;
 	font-weight: 600;
-	background: #f00;
 	border-radius: 5px;
 }
 
