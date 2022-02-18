@@ -177,7 +177,6 @@ body {
 
 .content .cardAtribs input {
 	position: absolute;
-	appearance: none;
 }
 
 .content .cardAtribs input:checked ~ div {
