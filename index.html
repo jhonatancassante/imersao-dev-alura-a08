@@ -2,74 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Imersão Dev Alura - Aula 08</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Imersão Dev Alura - Aula 08</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="header">
-      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
-        alt="">
-      <div class="page-title">Super Trunfo</div>
-      <div class="btnSortear" onclick="tirarCarta()" id="btnSortear">Sortear carta</div>
-    </div>
-
-    <span class="choice inactive">Clique em um atributo para escolher qual jogar:</span>
-    <div class="wrapper">
-      <div class="card player">
-        <div class="content fliped">
-          <div class="cardHeader">
-            <div class="cardNumber"></div>
-            <div class="cardName"></div>
-          </div>
-          <div class="cardImg"></div>
-          <div class="cardAtribs">
-            <input type="radio" id="hp" name="atribs" value="hp">
-            <label for="hp" class="atrib">HP: <div class="hp"></div></label>
-            <input type="radio" id="atk" name="atribs" value="atk">
-            <label for="atk" class="atrib">ATK: <div class="atk"></div></label>
-            <input type="radio" id="def" name="atribs" value="def">
-            <label for="def" class="atrib">DEF: <div class="def"></div></label>
-            <input type="radio" id="spatk" name="atribs" value="spatk">
-            <label for="spatk" class="atrib">SPATK: <div class="spatk"></div></label>
-            <input type="radio" id="spdef" name="atribs" value="spdef">
-            <label for="spdef" class="atrib">SPDEF: <div class="spdef"></div></label>
-            <input type="radio" id="speed" name="atribs" value="speed">
-            <label for="speed" class="atrib">SPEED: <div class="speed"></div></label>
-          </div>
+        <div class="header">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
+            <div class="page-title">Super Trunfo</div>
+            <div class="btnSortear" onclick="tirarCarta()" id="btnSortear">Sortear carta</div>
         </div>
-      </div>
-      <div class="card machine">
-        <div class="content fliped">
-          <div class="cardHeader">
-            <div class="cardNumber"></div>
-            <div class="cardName"></div>
-          </div>
-          <div class="cardImg"></div>
-          <div class="cardAtribs">
-            <label class="atrib">HP: <input type="checkbox"><div class="hp"></div></label>
-            <label class="atrib">ATK: <input type="checkbox"><div class="atk"></div></label>
-            <label class="atrib">DEF: <input type="checkbox"><div class="def"></div></label>
-            <label class="atrib">SPATK: <input type="checkbox"><div class="spatk"></div></label>
-            <label class="atrib">SPDEF: <input type="checkbox"><div class="spdef"></div></label>
-            <label class="atrib">SPEED: <input type="checkbox"><div class="speed"></div></label>
-          </div>
+
+        <span class="choice inactive">Clique em um atributo para escolher qual jogar:</span>
+        <div class="wrapper">
+            <div class="card player">
+                <div class="content fliped">
+                    <div class="cardHeader">
+                        <div class="cardNumber"></div>
+                        <div class="cardName"></div>
+                    </div>
+                    <div class="cardImg"></div>
+                    <div class="cardAtribs">
+                        <label class="atrib">HP: <input type="checkbox" id="hp" onclick="changeOption(id)"><div class="hp"></div></label>
+                        <label class="atrib">ATK: <input type="checkbox" id="atk" onclick="changeOption(id)"><div class="atk"></div></label>
+                        <label class="atrib">DEF: <input type="checkbox" id="def" onclick="changeOption(id)"><div class="def"></div></label>
+                        <label class="atrib">SPATK: <input type="checkbox" id="spatk" onclick="changeOption(id)"><div class="spatk"></div></label>
+                        <label class="atrib">SPDEF: <input type="checkbox" id="spdef" onclick="changeOption(id)"><div class="spdef"></div></label>
+                        <label class="atrib">SPEED: <input type="checkbox" id="speed" onclick="changeOption(id)"><div class="speed"></div></label>
+                    </div>
+                </div>
+            </div>
+            <div class="card machine">
+                <div class="content fliped">
+                    <div class="cardHeader">
+                        <div class="cardNumber"></div>
+                        <div class="cardName"></div>
+                    </div>
+                    <div class="cardImg"></div>
+                    <div class="cardAtribs">
+                        <label class="atrib">HP: <input type="checkbox"><div class="hp"></div></label>
+                        <label class="atrib">ATK: <input type="checkbox"><div class="atk"></div></label>
+                        <label class="atrib">DEF: <input type="checkbox"><div class="def"></div></label>
+                        <label class="atrib">SPATK: <input type="checkbox"><div class="spatk"></div></label>
+                        <label class="atrib">SPDEF: <input type="checkbox"><div class="spdef"></div></label>
+                        <label class="atrib">SPEED: <input type="checkbox"><div class="speed"></div></label>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="footer">
+            <div class="btnJogar inactive" onclick="jogar()" id="btnJogar">Jogar</div>
+        </div>
     </div>
 
-    <div class="footer">
-      <div class="btnJogar inactive" onclick="jogar()" id="btnJogar">Jogar</div>
-    </div>
-  </div>
-
-  <script src='./pokemons.js'></script>
-  <script src="./script.js"></script>
+    <script src='./pokemons.js'></script>
+    <script src="./script.js"></script>
 
 </body>
 

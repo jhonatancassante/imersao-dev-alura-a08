@@ -9,84 +9,102 @@ var cardPlayer = 0;
 var cardMachine = 0;
 
 function tirarCarta() {
-  if (!btnSortear.classList.contains("inactive")) {
-    console.log("Sortear");
-    choice.classList.remove("inactive");
+    if (!btnSortear.classList.contains("inactive")) {
+        console.log("Sortear");
+        choice.classList.remove("inactive");
 
-    if (deck.length > 1) {
-      cardMachine = sortearCarta();
-      cardPlayer = sortearCarta();
+        if (deck.length > 1) {
+            cardMachine = sortearCarta();
+            cardPlayer = sortearCarta();
 
-      contentM.classList.add("fliped");
-      btnSortear.classList.add("inactive");
-      contentP.classList.remove("fliped");
-      btnJogar.classList.remove("inactive");
-      exibirCarta(cardPlayer, ".player");
-      console.log(cardPlayer);
-      console.log(cardMachine);
-    } else {
-      deck = pokemons();
-      console.error(
-        "As cartas acabaram, sorteie novamente para embaralhar o deck."
-      );
+            contentM.classList.add("fliped");
+            btnSortear.classList.add("inactive");
+            contentP.classList.remove("fliped");
+            btnJogar.classList.remove("inactive");
+            exibirCarta(cardPlayer, ".player");
+            console.log(cardPlayer);
+            console.log(cardMachine);
+        } else {
+            deck = pokemons();
+            console.error(
+                "As cartas acabaram, sorteie novamente para embaralhar o deck."
+            );
+        }
     }
-  }
 }
 
 function sortearCarta() {
-  var indice = parseInt(Math.random() * deck.length);
-  var carta = 0;
+    var indice = parseInt(Math.random() * deck.length);
+    var carta = 0;
 
-  carta = deck[indice];
-  deck.splice(indice, 1);
+    carta = deck[indice];
+    deck.splice(indice, 1);
 
-  return carta;
+    return carta;
 }
 
 function exibirCarta(carta, who) {
-  var cardNumber = document.querySelector(who + " .cardNumber");
-  var cardName = document.querySelector(who + " .cardName");
-  var cardImg = document.querySelector(who + " .cardImg");
-  var tagImage = document.createElement("img");
-  var hp = document.querySelector(who + " .hp");
-  var atk = document.querySelector(who + " .atk");
-  var def = document.querySelector(who + " .def");
-  var spatk = document.querySelector(who + " .spatk");
-  var spdef = document.querySelector(who + " .spdef");
-  var speed = document.querySelector(who + " .speed");
+    var cardNumber = document.querySelector(who + " .cardNumber");
+    var cardName = document.querySelector(who + " .cardName");
+    var cardImg = document.querySelector(who + " .cardImg");
+    var tagImage = document.createElement("img");
+    var hp = document.querySelector(who + " .hp");
+    var atk = document.querySelector(who + " .atk");
+    var def = document.querySelector(who + " .def");
+    var spatk = document.querySelector(who + " .spatk");
+    var spdef = document.querySelector(who + " .spdef");
+    var speed = document.querySelector(who + " .speed");
 
-  cardNumber.innerHTML = '';
-  cardName.innerHTML = '';
-  cardImg.innerHTML = '';
-  tagImage.innerHTML = '';
-  hp.innerHTML = '';
-  atk.innerHTML = '';
-  def.innerHTML = '';
-  spatk.innerHTML = '';
-  spdef.innerHTML = '';
-  speed.innerHTML = '';
+    cardNumber.innerHTML = '';
+    cardName.innerHTML = '';
+    cardImg.innerHTML = '';
+    tagImage.innerHTML = '';
+    hp.innerHTML = '';
+    atk.innerHTML = '';
+    def.innerHTML = '';
+    spatk.innerHTML = '';
+    spdef.innerHTML = '';
+    speed.innerHTML = '';
 
-  cardImg.appendChild(tagImage);
- 
-  cardNumber.innerHTML = carta.number;
-  cardName.innerHTML = carta.nome;
-  tagImage.src = carta.links.linkImg;
-  hp.innerHTML = carta.atributos.hp;
-  atk.innerHTML = carta.atributos.ataque;
-  def.innerHTML = carta.atributos.defesa;
-  spatk.innerHTML = carta.atributos.spAtaque;
-  spdef.innerHTML = carta.atributos.spDefesa;
-  speed.innerHTML = carta.atributos.speed;
+    cardImg.appendChild(tagImage);
+
+    cardNumber.innerHTML = carta.number;
+    cardName.innerHTML = carta.nome;
+    tagImage.src = carta.links.linkImg;
+    hp.innerHTML = carta.atributos.hp;
+    atk.innerHTML = carta.atributos.ataque;
+    def.innerHTML = carta.atributos.defesa;
+    spatk.innerHTML = carta.atributos.spAtaque;
+    spdef.innerHTML = carta.atributos.spDefesa;
+    speed.innerHTML = carta.atributos.speed;
+}
+
+function changeOption(id) {
+    var hp = document.querySelector("#hp");
+    var atk = document.querySelector("#atk");
+    var def = document.querySelector("#def");
+    var spatk = document.querySelector("#spatk");
+    var spdef = document.querySelector("#spdef");
+    var speed = document.querySelector("#speed");
+    var newCheck = document.querySelector("#" + id);
+
+    hp.checked = false;
+    atk.checked = false;
+    def.checked = false;
+    spatk.checked = false;
+    spdef.checked = false;
+    speed.checked = false;
+    newCheck.checked = true;
 }
 
 function jogar() {
-  if (!btnJogar.classList.contains("inactive")) {
-    console.log("Jogar");
+    if (!btnJogar.classList.contains("inactive")) {
+        console.log("Jogar");
 
-    btnSortear.classList.remove("inactive");
-    contentM.classList.remove("fliped");
-    exibirCarta(cardMachine, ".machine");
-    btnJogar.classList.add("inactive");
-    choice.classList.add("inactive");
-  }
+        btnSortear.classList.remove("inactive");
+        contentM.classList.remove("fliped");
+        exibirCarta(cardMachine, ".machine");
+        btnJogar.classList.add("inactive");
+        choice.classList.add("inactive");
+    }
 }
