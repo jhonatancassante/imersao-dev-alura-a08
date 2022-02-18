@@ -94,7 +94,8 @@ function changeOption(id) {
     spatk.checked = false;
     spdef.checked = false;
     speed.checked = false;
-    newCheck.checked = true;
+    console.log(newCheck);
+    console.log(id);
 }
 
 function jogar() {
