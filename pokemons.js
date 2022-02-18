@@ -229,7 +229,7 @@ function pokemons() {
         },
         {
             number: 9,
-            nome: "Blastoise (Mega Blastoise)",
+            nome: "Mega Blastoise",
             tipos: { primario: "Water", secundario: "" },
             atributos: {
                 hp: 79,
@@ -362,7 +362,7 @@ function pokemons() {
         },
         {
             number: 15,
-            nome: "Beedrill (Mega Beedrill)",
+            nome: "Mega Beedrill",
             tipos: { primario: "Bug", secundario: "Poison" },
             atributos: {
                 hp: 65,
@@ -438,7 +438,7 @@ function pokemons() {
         },
         {
             number: 18,
-            nome: "Pidgeot (Mega Pidgeot)",
+            nome: "Mega Pidgeot",
             tipos: { primario: "Normal", secundario: "Flying" },
             atributos: {
                 hp: 83,
@@ -476,7 +476,7 @@ function pokemons() {
         },
         {
             number: 19,
-            nome: "Rattata (Alolan Rattata)",
+            nome: "Alolan Rattata",
             tipos: { primario: "Dark", secundario: "Normal" },
             atributos: {
                 hp: 30,
@@ -514,7 +514,7 @@ function pokemons() {
         },
         {
             number: 20,
-            nome: "Raticate (Alolan Raticate)",
+            nome: "Alolan Raticate",
             tipos: { primario: "Dark", secundario: "Normal" },
             atributos: {
                 hp: 75,
@@ -628,7 +628,7 @@ function pokemons() {
         },
         {
             number: 25,
-            nome: "Pikachu (Partner Pikachu)",
+            nome: "Partner Pikachu",
             tipos: { primario: "Electric", secundario: "" },
             atributos: {
                 hp: 45,
@@ -666,7 +666,7 @@ function pokemons() {
         },
         {
             number: 26,
-            nome: "Raichu (Alolan Raichu)",
+            nome: "Alolan Raichu",
             tipos: { primario: "Electric", secundario: "Psychic" },
             atributos: {
                 hp: 60,
@@ -704,7 +704,7 @@ function pokemons() {
         },
         {
             number: 27,
-            nome: "Sandshrew (Alolan Sandshrew)",
+            nome: "Alolan Sandshrew",
             tipos: { primario: "Ice", secundario: "Steel" },
             atributos: {
                 hp: 50,
@@ -742,7 +742,7 @@ function pokemons() {
         },
         {
             number: 28,
-            nome: "Sandslash (Alolan Sandslash)",
+            nome: "Alolan Sandslash",
             tipos: { primario: "Ice", secundario: "Steel" },
             atributos: {
                 hp: 75,
@@ -932,7 +932,7 @@ function pokemons() {
         },
         {
             number: 37,
-            nome: "Vulpix (Alolan Vulpix)",
+            nome: "Alolan Vulpix",
             tipos: { primario: "Ice", secundario: "" },
             atributos: {
                 hp: 38,
@@ -970,7 +970,7 @@ function pokemons() {
         },
         {
             number: 38,
-            nome: "Ninetales (Alolan Ninetales)",
+            nome: "Alolan Ninetales",
             tipos: { primario: "Ice", secundario: "Fairy" },
             atributos: {
                 hp: 73,
@@ -1217,7 +1217,7 @@ function pokemons() {
         },
         {
             number: 50,
-            nome: "Diglett (Alolan Diglett)",
+            nome: "Alolan Diglett",
             tipos: { primario: "Ground", secundario: "Steel" },
             atributos: {
                 hp: 10,
@@ -1255,7 +1255,7 @@ function pokemons() {
         },
         {
             number: 51,
-            nome: "Dugtrio (Alolan Dugtrio)",
+            nome: "Alolan Dugtrio",
             tipos: { primario: "Ground", secundario: "Steel" },
             atributos: {
                 hp: 35,
@@ -1293,7 +1293,7 @@ function pokemons() {
         },
         {
             number: 52,
-            nome: "Meowth (Alolan Meowth)",
+            nome: "Alolan Meowth",
             tipos: { primario: "Dark", secundario: "" },
             atributos: {
                 hp: 40,
@@ -1312,7 +1312,7 @@ function pokemons() {
         },
         {
             number: 52,
-            nome: "Meowth (Galarian Meowth)",
+            nome: "Galarian Meowth",
             tipos: { primario: "Steel", secundario: "" },
             atributos: {
                 hp: 50,
@@ -1350,7 +1350,7 @@ function pokemons() {
         },
         {
             number: 53,
-            nome: "Persian (Alolan Persian)",
+            nome: "Alolan Persian",
             tipos: { primario: "Dark", secundario: "" },
             atributos: {
                 hp: 65,
@@ -1597,7 +1597,7 @@ function pokemons() {
         },
         {
             number: 65,
-            nome: "Alakazam (Mega Alakazam)",
+            nome: "Mega Alakazam",
             tipos: { primario: "Psychic", secundario: "" },
             atributos: {
                 hp: 55,
@@ -1787,7 +1787,7 @@ function pokemons() {
         },
         {
             number: 74,
-            nome: "Geodude (Alolan Geodude)",
+            nome: "Alolan Geodude",
             tipos: { primario: "Rock", secundario: "Electric" },
             atributos: {
                 hp: 40,
@@ -1825,7 +1825,7 @@ function pokemons() {
         },
         {
             number: 75,
-            nome: "Graveler (Alolan Graveler)",
+            nome: "Alolan Graveler",
             tipos: { primario: "Rock", secundario: "Electric" },
             atributos: {
                 hp: 55,
@@ -1863,7 +1863,7 @@ function pokemons() {
         },
         {
             number: 76,
-            nome: "Golem (Alolan Golem)",
+            nome: "Alolan Golem",
             tipos: { primario: "Rock", secundario: "Electric" },
             atributos: {
                 hp: 80,
@@ -1901,7 +1901,7 @@ function pokemons() {
         },
         {
             number: 77,
-            nome: "Ponyta (Galarian Ponyta)",
+            nome: "Galarian Ponyta",
             tipos: { primario: "Psychic", secundario: "" },
             atributos: {
                 hp: 50,
@@ -1939,7 +1939,7 @@ function pokemons() {
         },
         {
             number: 78,
-            nome: "Rapidash (Galarian Rapidash)",
+            nome: "Galarian Rapidash",
             tipos: { primario: "Psychic", secundario: "Fairy" },
             atributos: {
                 hp: 65,
@@ -1977,7 +1977,7 @@ function pokemons() {
         },
         {
             number: 79,
-            nome: "Slowpoke (Galarian Slowpoke)",
+            nome: "Galarian Slowpoke",
             tipos: { primario: "Psychic", secundario: "" },
             atributos: {
                 hp: 90,
@@ -2015,7 +2015,7 @@ function pokemons() {
         },
         {
             number: 80,
-            nome: "Slowbro (Galarian Slowbro)",
+            nome: "Galarian Slowbro",
             tipos: { primario: "Poison", secundario: "Psychic" },
             atributos: {
                 hp: 95,
@@ -2034,7 +2034,7 @@ function pokemons() {
         },
         {
             number: 80,
-            nome: "Slowbro (Mega Slowbro)",
+            nome: "Mega Slowbro",
             tipos: { primario: "Water", secundario: "Psychic" },
             atributos: {
                 hp: 95,
@@ -2110,7 +2110,7 @@ function pokemons() {
         },
         {
             number: 83,
-            nome: "Farfetch'd (Galarian Farfetch'd)",
+            nome: "Galarian Farfetch'd",
             tipos: { primario: "Fighting", secundario: "" },
             atributos: {
                 hp: 52,
@@ -2224,7 +2224,7 @@ function pokemons() {
         },
         {
             number: 88,
-            nome: "Grimer (Alolan Grimer)",
+            nome: "Alolan Grimer",
             tipos: { primario: "Poison", secundario: "Dark" },
             atributos: {
                 hp: 80,
@@ -2262,7 +2262,7 @@ function pokemons() {
         },
         {
             number: 89,
-            nome: "Muk (Alolan Muk)",
+            nome: "Alolan Muk",
             tipos: { primario: "Poison", secundario: "Dark" },
             atributos: {
                 hp: 105,
@@ -2376,7 +2376,7 @@ function pokemons() {
         },
         {
             number: 94,
-            nome: "Gengar (Mega Gengar)",
+            nome: "Mega Gengar",
             tipos: { primario: "Ghost", secundario: "Poison" },
             atributos: {
                 hp: 60,
@@ -2566,7 +2566,7 @@ function pokemons() {
         },
         {
             number: 103,
-            nome: "Exeggutor (Alolan Exeggutor)",
+            nome: "Alolan Exeggutor",
             tipos: { primario: "Grass", secundario: "Dragon" },
             atributos: {
                 hp: 95,
@@ -2623,7 +2623,7 @@ function pokemons() {
         },
         {
             number: 105,
-            nome: "Marowak (Alolan Marowak)",
+            nome: "Alolan Marowak",
             tipos: { primario: "Fire", secundario: "Ghost" },
             atributos: {
                 hp: 60,
@@ -2737,7 +2737,7 @@ function pokemons() {
         },
         {
             number: 110,
-            nome: "Weezing (Galarian Weezing)",
+            nome: "Galarian Weezing",
             tipos: { primario: "Poison", secundario: "Fairy" },
             atributos: {
                 hp: 65,
@@ -2851,7 +2851,7 @@ function pokemons() {
         },
         {
             number: 115,
-            nome: "Kangaskhan (Mega Kangaskhan)",
+            nome: "Mega Kangaskhan",
             tipos: { primario: "Normal", secundario: "" },
             atributos: {
                 hp: 105,
@@ -3003,7 +3003,7 @@ function pokemons() {
         },
         {
             number: 122,
-            nome: "Mr. Mime (Galarian Mr. Mime)",
+            nome: "Galarian Mr. Mime",
             tipos: { primario: "Ice", secundario: "Psychic" },
             atributos: {
                 hp: 50,
@@ -3117,7 +3117,7 @@ function pokemons() {
         },
         {
             number: 127,
-            nome: "Pinsir (Mega Pinsir)",
+            nome: "Mega Pinsir",
             tipos: { primario: "Bug", secundario: "Flying" },
             atributos: {
                 hp: 65,
@@ -3193,7 +3193,7 @@ function pokemons() {
         },
         {
             number: 130,
-            nome: "Gyarados (Mega Gyarados)",
+            nome: "Mega Gyarados",
             tipos: { primario: "Water", secundario: "Dark" },
             atributos: {
                 hp: 95,
@@ -3269,7 +3269,7 @@ function pokemons() {
         },
         {
             number: 133,
-            nome: "Eevee (Partner Eevee)",
+            nome: "Partner Eevee",
             tipos: { primario: "Normal", secundario: "" },
             atributos: {
                 hp: 65,
@@ -3459,7 +3459,7 @@ function pokemons() {
         },
         {
             number: 142,
-            nome: "Aerodactyl (Mega Aerodactyl)",
+            nome: "Mega Aerodactyl",
             tipos: { primario: "Rock", secundario: "Flying" },
             atributos: {
                 hp: 80,
@@ -3516,7 +3516,7 @@ function pokemons() {
         },
         {
             number: 144,
-            nome: "Articuno (Galarian Articuno)",
+            nome: "Galarian Articuno",
             tipos: { primario: "Psychic", secundario: "Flying" },
             atributos: {
                 hp: 90,
@@ -3554,7 +3554,7 @@ function pokemons() {
         },
         {
             number: 145,
-            nome: "Zapdos (Galarian Zapdos)",
+            nome: "Galarian Zapdos",
             tipos: { primario: "Fighting", secundario: "Flying" },
             atributos: {
                 hp: 90,
@@ -3592,7 +3592,7 @@ function pokemons() {
         },
         {
             number: 146,
-            nome: "Moltres (Galarian Moltres)",
+            nome: "Galarian Moltres",
             tipos: { primario: "Dark", secundario: "Flying" },
             atributos: {
                 hp: 90,
@@ -3687,7 +3687,7 @@ function pokemons() {
         },
         {
             number: 150,
-            nome: "Mewtwo (Mega Mewtwo X)",
+            nome: "Mega Mewtwo X",
             tipos: { primario: "Psychic", secundario: "Fighting" },
             atributos: {
                 hp: 106,
@@ -3706,7 +3706,7 @@ function pokemons() {
         },
         {
             number: 150,
-            nome: "Mewtwo (Mega Mewtwo Y)",
+            nome: "Mega Mewtwo Y",
             tipos: { primario: "Psychic", secundario: "" },
             atributos: {
                 hp: 106,
