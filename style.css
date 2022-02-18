@@ -167,10 +167,6 @@ body {
     border-radius: 5px;
 }
 
-.content .cardAtribs .atrib:hover {
-    font-weight: 600;
-}
-
 .content .cardAtribs input {
     position: absolute;
     appearance: none;
@@ -186,6 +182,7 @@ body {
 .content .cardAtribs .atrib input:checked~div {
     border: 2px solid red;
     font-weight: 600;
+    box-shadow: inset 0 0 2px red;
 }
 
 .container .footer {

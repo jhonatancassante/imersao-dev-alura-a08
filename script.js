@@ -49,10 +49,10 @@ function exibirCarta(carta, who) {
     var cardImg = document.querySelector(who + " .cardImg");
     var tagImage = document.createElement("img");
     var hp = document.querySelector(who + " .hp");
-    var atk = document.querySelector(who + " .atk");
-    var def = document.querySelector(who + " .def");
-    var spatk = document.querySelector(who + " .spatk");
-    var spdef = document.querySelector(who + " .spdef");
+    var atk = document.querySelector(who + " .ataque");
+    var def = document.querySelector(who + " .defesa");
+    var spatk = document.querySelector(who + " .spAtaque");
+    var spdef = document.querySelector(who + " .spDefesa");
     var speed = document.querySelector(who + " .speed");
 
     cardNumber.innerHTML = '';
@@ -85,7 +85,7 @@ function jogar() {
 
         atributoSelecionado = obtemAtributo();
 
-        console.log(atributoSelecionado);
+        console.log("Teste " + atributoSelecionado);
 
         btnSortear.classList.remove("inactive");
         contentM.classList.remove("fliped");
