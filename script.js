@@ -79,25 +79,6 @@ function exibirCarta(carta, who) {
     speed.innerHTML = carta.atributos.speed;
 }
 
-function changeOption(id) {
-    var hp = document.querySelector("#hp");
-    var atk = document.querySelector("#atk");
-    var def = document.querySelector("#def");
-    var spatk = document.querySelector("#spatk");
-    var spdef = document.querySelector("#spdef");
-    var speed = document.querySelector("#speed");
-    var newCheck = document.querySelector("#" + id);
-
-    hp.checked = false;
-    atk.checked = false;
-    def.checked = false;
-    spatk.checked = false;
-    spdef.checked = false;
-    speed.checked = false;
-    console.log(newCheck);
-    console.log(id);
-}
-
 function jogar() {
     if (!btnJogar.classList.contains("inactive")) {
         console.log("Jogar");
