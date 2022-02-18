@@ -83,10 +83,24 @@ function jogar() {
     if (!btnJogar.classList.contains("inactive")) {
         console.log("Jogar");
 
+        atributoSelecionado = obtemAtributo();
+
+        console.log(atributoSelecionado);
+
         btnSortear.classList.remove("inactive");
         contentM.classList.remove("fliped");
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
         choice.classList.add("inactive");
+    }
+}
+
+function obtemAtributo() {
+    var atributo = document.getElementsByName("atributos");
+
+    for (var item of atributo) {
+        if (item.checked) {
+            return item.value;
+        }
     }
 }
