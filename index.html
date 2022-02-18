@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Imersão Dev Alura - Aula 08</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+        alt="">
+      <div class="page-title">Super Trunfo</div>
+      <div class="btnSortear" onclick="tirarCarta()" id="btnSortear">Sortear carta</div>
+    </div>
+
+    <span class="choice inactive">Clique em um atributo para escolher qual jogar:</span>
+    <div class="wrapper">
+      <div class="card player">
+        <div class="content fliped">
+          <div class="cardHeader">
+            <div class="cardNumber"></div>
+            <div class="cardName"></div>
+          </div>
+          <div class="cardImg"></div>
+          <div class="cardAtribs">
+            <label class="atrib">HP: <input type="checkbox"><div class="hp"></div></label>
+            <label class="atrib">ATK: <input type="checkbox"><div class="atk"></div></label>
+            <label class="atrib">DEF: <input type="checkbox"><div class="def"></div></label>
+            <label class="atrib">SPATK: <input type="checkbox"><div class="spatk"></div></label>
+            <label class="atrib">SPDEF: <input type="checkbox"><div class="spdef"></div></label>
+            <label class="atrib">SPEED: <input type="checkbox"><div class="speed"></div></label>
+          </div>
+        </div>
+      </div>
+      <div class="card machine">
+        <div class="content fliped">
+          <div class="cardHeader">
+            <div class="cardNumber"></div>
+            <div class="cardName"></div>
+          </div>
+          <div class="cardImg"></div>
+          <div class="cardAtribs">
+            <label class="atrib">HP: <input type="checkbox"><div class="hp"></div></label>
+            <label class="atrib">ATK: <input type="checkbox"><div class="atk"></div></label>
+            <label class="atrib">DEF: <input type="checkbox"><div class="def"></div></label>
+            <label class="atrib">SPATK: <input type="checkbox"><div class="spatk"></div></label>
+            <label class="atrib">SPDEF: <input type="checkbox"><div class="spdef"></div></label>
+            <label class="atrib">SPEED: <input type="checkbox"><div class="speed"></div></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="btnJogar inactive" onclick="jogar()" id="btnJogar">Jogar</div>
+    </div>
+  </div>
+
+  <script src='./pokemons.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
