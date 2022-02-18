@@ -109,7 +109,6 @@ function jogar() {
         selectMachineAtrib(selectMachine);
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
-        choice.classList.add("inactive");
         newGame = false;
         choice.innerHTML = "Clique no botão sortear para jogar novamente...";
     }

@@ -104,10 +104,6 @@ body {
     height: 18px;
 }
 
-.container .choice.inactive {
-    color: transparent;
-}
-
 .container .wrapper {
     position: relative;
     display: flex;
