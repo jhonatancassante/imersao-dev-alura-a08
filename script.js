@@ -66,6 +66,8 @@ function exibirCarta(carta, who) {
     spdef.innerHTML = '';
     speed.innerHTML = '';
 
+
+
     cardImg.appendChild(tagImage);
 
     cardNumber.innerHTML = carta.number;
@@ -87,12 +89,12 @@ function jogar() {
 
         var valorJogador = cardPlayer.atributos[atributoSelecionado];
         var valorMaquina = cardMachine.atributos[atributoSelecionado];
-        var seletcMachine = document.querySelector(who + " ." + atributoSelecionado);
+        var selectMachine = document.querySelector(who + " ." + atributoSelecionado);
 
 
         console.log("Teste " + valorJogador);
         console.log("Teste " + valorMaquina);
-        console.log("Teste " + seletcMachine);
+        console.log("Teste " + selectMachine);
 
         if (valorJogador > valorMaquina) {
             imprimirMensagem("Você venceu!");
