@@ -10,7 +10,6 @@ var cardMachine = 0;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
-        console.log("Sortear");
         choice.classList.remove("inactive");
 
         if (deck.length > 1) {
@@ -20,10 +19,7 @@ function tirarCarta() {
             contentM.classList.add("fliped");
             btnSortear.classList.add("inactive");
             contentP.classList.remove("fliped");
-            btnJogar.classList.remove("inactive");
             exibirCarta(cardPlayer, ".player");
-            console.log(cardPlayer);
-            console.log(cardMachine);
         } else {
             deck = pokemons();
             imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.");
@@ -83,20 +79,18 @@ function exibirCarta(carta, who) {
     return;
 }
 
+function atribSelected() {
+    btnJogar.classList.remove("inactive");
+}
+
 function jogar() {
     if (!btnJogar.classList.contains("inactive")) {
-        console.log("Jogar");
 
         atributoSelecionado = obtemAtributo();
 
         var valorJogador = cardPlayer.atributos[atributoSelecionado];
         var valorMaquina = cardMachine.atributos[atributoSelecionado];
         var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
-
-
-        console.log("Teste " + valorJogador);
-        console.log("Teste " + valorMaquina);
-        console.log("Teste " + selectMachine);
 
         if (valorJogador > valorMaquina) {
             imprimirMensagem("Você venceu!");
