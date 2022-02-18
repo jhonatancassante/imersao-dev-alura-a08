@@ -177,12 +177,13 @@ body {
 }
 
 .content .cardAtribs .atrib div {
-    border: 1px solid #000;
-    border-radius: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .content .cardAtribs .atrib input:checked~div {
-    border: 1px solid red;
+    border: 2px solid red;
     font-weight: 600;
 }
 
