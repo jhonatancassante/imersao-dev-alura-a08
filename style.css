@@ -176,12 +176,12 @@ body {
     appearance: none;
 }
 
-.content .cardAtribs input div {
+.content .cardAtribs label div {
     border: 1px solid #000;
     box-shadow: none;
 }
 
-.content .cardAtribs input:checked~div {
+.content .cardAtribs label input:checked~div {
     border: 1px solid red;
     font-weight: 600;
 }
