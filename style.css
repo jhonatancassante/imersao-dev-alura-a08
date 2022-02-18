@@ -16,12 +16,12 @@
     --background-color: #10131c;
     --font-color1: #fff;
     --font-color2: #333;
-    --card-border-color: #000;
-    --card-content-color: greenyellow;
+    --card-border-color: #ff0000;
+    --card-content-color: #00ff00;
     --card-back-color: #000;
-    --card-header-color: yellow;
-    --card-img-color: blue;
-    --card-atrib-color: blueviolet;
+    --card-header-color: #ff0066;
+    --card-img-color: #0000ff;
+    --card-atrib-color: #6600ff;
     --actived-atrib-color: red;
     --mensage-bg-color: rgb(102, 0, 255, 75%);
     --card-height: 360px;
