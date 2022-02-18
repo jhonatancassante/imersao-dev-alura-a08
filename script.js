@@ -11,7 +11,8 @@ var newGame = false;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
-        choice.innerHTML = "Clique em um atributo para escolher qual jogar...";
+        choice.innerHTML = '';
+        choice.innerHTML = 'Clique em um atributo para escolher qual jogar...';
 
         if (deck.length > 1) {
             cardMachine = sortearCarta();
@@ -110,7 +111,8 @@ function jogar() {
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
         newGame = false;
-        choice.innerHTML = "Clique no botão sortear para jogar novamente...";
+        choice.innerHTML = '';
+        choice.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
     }
 
     return;
