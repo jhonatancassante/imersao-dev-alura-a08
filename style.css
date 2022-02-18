@@ -182,8 +182,8 @@ body {
 }
 
 .content .cardAtribs input:checked~div {
-    border: 1px solid #00ffe2;
-    box-shadow: 0px 0px 1px 2px #00ffe2;
+    border: 1px solid red;
+    box-shadow: 0px 0px 1px 5px red;
     font-weight: 600;
 }
 
