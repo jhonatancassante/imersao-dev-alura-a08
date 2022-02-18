@@ -7,6 +7,7 @@ let choice = document.querySelector(".choice");
 var deck = pokemons();
 var cardPlayer = 0;
 var cardMachine = 0;
+var newGame = false;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
@@ -20,6 +21,7 @@ function tirarCarta() {
             btnSortear.classList.add("inactive");
             contentP.classList.remove("fliped");
             exibirCarta(cardPlayer, ".player");
+            newGame = true;
         } else {
             deck = pokemons();
             imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.");
@@ -80,7 +82,9 @@ function exibirCarta(carta, who) {
 }
 
 function atribSelected() {
-    btnJogar.classList.remove("inactive");
+    if (newGame = true) {
+        btnJogar.classList.remove("inactive");
+    }
 }
 
 function jogar() {
@@ -106,6 +110,7 @@ function jogar() {
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
         choice.classList.add("inactive");
+        newGame = false;
     }
 
     return;
