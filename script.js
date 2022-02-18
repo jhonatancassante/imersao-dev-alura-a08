@@ -85,10 +85,14 @@ function jogar() {
 
         atributoSelecionado = obtemAtributo();
 
-        console.log("Teste " + atributoSelecionado);
-
         var valorJogador = cardPlayer.atributos[atributoSelecionado];
         var valorMaquina = cardMachine.atributos[atributoSelecionado];
+        var seletcMachine = document.querySelector(who + " ." + atributoSelecionado);
+
+
+        console.log("Teste " + valorJogador);
+        console.log("Teste " + valorMaquina);
+        console.log("Teste " + seletcMachine);
 
         if (valorJogador > valorMaquina) {
             imprimirMensagem("Você venceu!");
