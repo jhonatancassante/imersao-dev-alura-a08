@@ -9,6 +9,7 @@
 body {
     display: flex;
     justify-content: center;
+    width: 100%;
     min-height: 100vh;
     background: #10131c;
 }
@@ -217,6 +218,12 @@ body {
     position: relative;
     border-radius: 10px;
     background-color: rgb(102, 0, 255, 92%);
+}
+
+.center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .alura-logo {
