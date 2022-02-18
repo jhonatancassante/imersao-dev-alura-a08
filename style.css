@@ -102,6 +102,7 @@ body {
 .container .header .btnSortear.inactive,
 .container .footer .btnJogar.inactive {
     opacity: 0.4;
+    cursor: none;
 }
 
 .container .choice {
