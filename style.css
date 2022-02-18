@@ -176,7 +176,7 @@ body {
     appearance: none;
 }
 
-.content .cardAtribs input~div {
+.content .cardAtribs input div {
     border: 1px solid #000;
     box-shadow: none;
 }
