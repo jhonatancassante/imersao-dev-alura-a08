@@ -31,6 +31,8 @@ function tirarCarta() {
             );
         }
     }
+
+    return;
 }
 
 function sortearCarta() {
@@ -79,6 +81,8 @@ function exibirCarta(carta, who) {
     spatk.innerHTML = carta.atributos.spAtaque;
     spdef.innerHTML = carta.atributos.spDefesa;
     speed.innerHTML = carta.atributos.speed;
+
+    return;
 }
 
 function jogar() {
@@ -111,6 +115,8 @@ function jogar() {
         btnJogar.classList.add("inactive");
         choice.classList.add("inactive");
     }
+
+    return;
 }
 
 function obtemAtributo() {
@@ -162,4 +168,6 @@ function imprimirMensagem(mensagem) {
     setTimeout(() => {
         tagDiv.remove();
     }, 2750);
+
+    return;
 }
