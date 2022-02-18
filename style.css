@@ -181,7 +181,7 @@ body {
 	border-radius: 5px;
 }
 
-.content .cardAtribs input:checked ~ div {
+.content .cardAtribs input:checked ~ label {
 	border: 1px solid #00ffe2;
 	box-shadow: 0px 0px 1px 2px #00ffe2;
 	font-weight: 600;
