@@ -175,9 +175,10 @@ body {
 	font-weight: 600;
 }
 
-.content .cardAtribs input[type="radio"] label {
+.content .cardAtribs label {
 	border: 2px solid #000;
-	position: relative;
+	box-shadow: none;
+	font-weight: 500;
 	border-radius: 5px;
 }
 
