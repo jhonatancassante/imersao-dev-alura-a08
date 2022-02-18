@@ -11,7 +11,7 @@ var newGame = false;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
-        choice.classList.remove("inactive");
+        choice.innerHTML = "Clique em um atributo para escolher qual jogar...";
 
         if (deck.length > 1) {
             cardMachine = sortearCarta();
@@ -111,6 +111,7 @@ function jogar() {
         btnJogar.classList.add("inactive");
         choice.classList.add("inactive");
         newGame = false;
+        choice.innerHTML = "Clique no botão sortear para jogar novamente...";
     }
 
     return;
