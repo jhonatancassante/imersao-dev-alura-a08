@@ -26,9 +26,7 @@ function tirarCarta() {
             console.log(cardMachine);
         } else {
             deck = pokemons();
-            console.error(
-                "As cartas acabaram, sorteie novamente para embaralhar o deck."
-            );
+            imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.");
         }
     }
 
