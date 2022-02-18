@@ -106,6 +106,7 @@ function jogar() {
 
         btnSortear.classList.remove("inactive");
         contentM.classList.remove("fliped");
+        selectMachineAtrib(selectMachine);
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
         choice.classList.add("inactive");
@@ -120,6 +121,25 @@ function obtemAtributo() {
             return item.value;
         }
     }
+}
+
+function selectMachineAtrib(selectMachine) {
+    var hp = document.querySelector(".machine .hp");
+    var atk = document.querySelector(".machine .ataque");
+    var def = document.querySelector(".machine .defesa");
+    var spatk = document.querySelector(".machine .spAtaque");
+    var spdef = document.querySelector(".machine .spDefesa");
+    var speed = document.querySelector(".machine .speed");
+
+    hp.classList.remove("actived");
+    atk.classList.remove("actived");
+    def.classList.remove("actived");
+    spatk.classList.remove("actived");
+    spdef.classList.remove("actived");
+    speed.classList.remove("actived");
+    selectMachine.classList.add("actived");
+
+    return;
 }
 
 function imprimirMensagem(mensagem) {
