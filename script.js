@@ -89,7 +89,7 @@ function jogar() {
 
         var valorJogador = cardPlayer.atributos[atributoSelecionado];
         var valorMaquina = cardMachine.atributos[atributoSelecionado];
-        var selectMachine = document.querySelector(who + " ." + atributoSelecionado);
+        var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
 
 
         console.log("Teste " + valorJogador);
