@@ -2,97 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Imersão Dev Alura - Aula 08</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Imersão Dev Alura - Aula 08</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
 
 </head>
 
 <body>
 
-    <div class="container">
+  <div class="container">
 
-        <div class="header">
-            <div class="page-title">Super Trunfo</div>
-            <div class="btnSortear" onclick="tirarCarta()" id="btnSortear">Sortear carta</div>
-        </div>
+    <div class="header">
+      <div class="page-title">Super Trunfo</div>
+    </div>
 
-        <span class="choice">Clique no botão Sortear Carta para tirar um carta...</span>
-        <div class="wrapper">
-            <div class="card player">
-                <div class="content fliped">
-                    <div class="cardHeader">
-                        <div class="cardNumber"></div>
-                        <div class="cardName"></div>
-                    </div>
-                    <div class="cardImg"></div>
-                    <div class="cardAtribs">
-                        <label class="atrib" for="hpRadioP">HP: <input type="radio" id="hpRadioP" name="atributos" value="hp"
+    <span class="choice">Clique no botão Sortear Carta para tirar um carta...</span>
+    <div class="wrapper">
+      <div class="card player">
+        <div class="content fliped">
+          <div class="cardHeader">
+            <div class="cardNumber"></div>
+            <div class="cardName"></div>
+          </div>
+          <div class="cardImg"></div>
+          <div class="cardAtribs">
+            <label class="atrib" for="hpRadioP">HP: <input type="radio" id="hpRadioP" name="atributos" value="hp"
                 onclick="atribSelected()">
               <div class="hp"></div>
             </label>
-                        <label class="atrib" for="atkRadioP">ATK: <input type="radio" id="atkRadioP" name="atributos"
+            <label class="atrib" for="atkRadioP">ATK: <input type="radio" id="atkRadioP" name="atributos"
                 onclick="atribSelected()" value="ataque">
               <div class="ataque"></div>
             </label>
-                        <label class="atrib" for="defRadioP">DEF: <input type="radio" id="defRadioP" name="atributos"
+            <label class="atrib" for="defRadioP">DEF: <input type="radio" id="defRadioP" name="atributos"
                 onclick="atribSelected()" value="defesa">
               <div class="defesa"></div>
             </label>
-                        <label class="atrib" for="spatkRadioP">SPATK: <input type="radio" id="spatkRadioP" name="atributos"
+            <label class="atrib" for="spatkRadioP">SPATK: <input type="radio" id="spatkRadioP" name="atributos"
                 onclick="atribSelected()" value="spAtaque">
               <div class="spAtaque"></div>
             </label>
-                        <label class="atrib" for="spdefRadioP">SPDEF: <input type="radio" id="spdefRadioP" name="atributos"
+            <label class="atrib" for="spdefRadioP">SPDEF: <input type="radio" id="spdefRadioP" name="atributos"
                 onclick="atribSelected()" value="spDefesa">
               <div class="spDefesa"></div>
             </label>
-                        <label class="atrib" for="speedRadioP">SPEED: <input type="radio" id="speedRadioP" name="atributos"
+            <label class="atrib" for="speedRadioP">SPEED: <input type="radio" id="speedRadioP" name="atributos"
                 onclick="atribSelected()" value="speed">
               <div class="speed"></div>
             </label>
-                    </div>
-                </div>
-            </div>
-            <div class="card machine">
-                <div class="content fliped">
-                    <div class="cardHeader">
-                        <div class="cardNumber"></div>
-                        <div class="cardName"></div>
-                    </div>
-                    <div class="cardImg"></div>
-                    <div class="cardAtribs">
-                        <label class="atrib">HP: <div class="hp actived"></div>
-            </label>
-                        <label class="atrib">ATK: <div class="ataque"></div>
-            </label>
-                        <label class="atrib">DEF: <div class="defesa"></div>
-            </label>
-                        <label class="atrib">SPATK: <div class="spAtaque"></div>
-            </label>
-                        <label class="atrib">SPDEF: <div class="spDefesa"></div>
-            </label>
-                        <label class="atrib">SPEED: <div class="speed"></div>
-            </label>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div class="footer">
-            <div class="btnJogar inactive" onclick="jogar()" id="btnJogar">Jogar</div>
+      </div>
+      <div class="card machine">
+        <div class="content fliped">
+          <div class="cardHeader">
+            <div class="cardNumber"></div>
+            <div class="cardName"></div>
+          </div>
+          <div class="cardImg"></div>
+          <div class="cardAtribs">
+            <label class="atrib">HP: <div class="hp actived"></div>
+            </label>
+            <label class="atrib">ATK: <div class="ataque"></div>
+            </label>
+            <label class="atrib">DEF: <div class="defesa"></div>
+            </label>
+            <label class="atrib">SPATK: <div class="spAtaque"></div>
+            </label>
+            <label class="atrib">SPDEF: <div class="spDefesa"></div>
+            </label>
+            <label class="atrib">SPEED: <div class="speed"></div>
+            </label>
+          </div>
         </div>
+      </div>
     </div>
 
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="">
-    <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
-    <img src="./img/pokeball.png" class="pokeball-logo" alt="">
+    <div class="footer">
+      <div class="btnSortear" onclick="tirarCarta()" id="btnSortear">Sortear carta</div>
+      <div class="btnJogar inactive" onclick="jogar()" id="btnJogar">Jogar</div>
+    </div>
+  </div>
 
-    <script src='./pokemons.js'></script>
-    <script src="./script.js"></script>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
+    alt="">
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  <img src="./img/pokeball.png" class="pokeball-logo" alt="">
+
+  <script src='./pokemons.js'></script>
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

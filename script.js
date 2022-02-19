@@ -8,9 +8,11 @@ var deck = pokemons();
 var cardPlayer = 0;
 var cardMachine = 0;
 var newGame = false;
+var gameStatus = 0;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
+        gameStatus = -1;
         choice.innerHTML = '';
         choice.innerHTML = 'Clique em um atributo para escolher qual jogar...';
         cleanSelectionAtrib();
@@ -99,10 +101,13 @@ function jogar() {
         var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
 
         if (valorJogador > valorMaquina) {
+            gameStatus = 2;
             imprimirMensagem("Você venceu!");
         } else if (valorJogador < valorMaquina) {
+            gameStatus = 0;
             imprimirMensagem("Você perdeu!");
         } else {
+            gameStatus = 1;
             imprimirMensagem("Deu empate!");
         }
 
@@ -176,9 +181,22 @@ function imprimirMensagem(mensagem) {
     tagSpan.classList.add("animate__heartBeat");
     tagSpan.classList.add("center");
 
+    if (gameStatus == 2) {
+        tagSpan.classList.add("msgWin");
+    }
+    else if (gameStatus == 0) {
+        tagSpan.classList.add("msgLose");
+    }
+    else if (gameStatus == 1){
+        tagSpan.classList.add("msgDraw");
+    }
+    else {
+        tagSpan.classList.add("msgStandard");
+    }
+
     setTimeout(() => {
         tagDiv.remove();
-    }, 2750);
+    }, 2500);
 
     return;
 }
