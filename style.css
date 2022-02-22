@@ -29,6 +29,7 @@
     --mensage-bg-win: rgba(0, 150, 0, 0.8);
     --mensage-bg-lose: rgba(255, 0, 0, 0.8);
     --mensage-bg-draw: rgba(150, 150, 0, 0.8);
+    --pb-dimensions: 250px;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 }
 
 .pokeball {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,7 +348,7 @@ body {
     color: var(--font-color1);
     text-align: center;
     position: fixed;
-    z-index: 97;
+    z-index: 1097;
     overflow: hidden;
 }
 
