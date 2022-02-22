@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -33,9 +32,52 @@
 }
 
 body {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background: var(--background-color);
+    background: radial-gradient(circle, rgba(82, 174, 215, 1) 0%, rgba(19, 76, 145, 1) 100%);
+}
+
+.pokeball {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--pb-dimensions);
+    min-height: var(--pb-dimensions);
+    width: var(--pb-dimensions);
+    height: var(--pb-dimensions);
+    background: #fff;
+    border-radius: 50%;
+    border: 5px solid #000;
+    z-index: 100;
+}
+
+.pokeball::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(50% - 2px);
+    background: #f00;
+    border-top-left-radius: calc(var(--pb-dimensions) / 2);
+    border-top-right-radius: calc(var(--pb-dimensions) / 2);
+    border-bottom: 5px solid #000;
+}
+
+.pokeball-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--pb-dimensions) / 3);
+    height: calc(var(--pb-dimensions) / 3);
+    background: #fff;
+    border-radius: 50%;
+    border: 5px solid #000;
+    z-index: 101;
 }
 
 .container {
@@ -43,6 +85,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
 }
 
 .container .header {
@@ -182,7 +225,6 @@ body {
     0% {
         --rotate: 0deg;
     }
-
     100% {
         --rotate: 360deg;
     }
@@ -326,18 +368,15 @@ body {
     justify-content: center;
 }
 
-.modal-mensagem span.msgWin
-{
+.modal-mensagem span.msgWin {
     background-color: var(--mensage-bg-win);
 }
 
-.modal-mensagem span.msgLose
-{
+.modal-mensagem span.msgLose {
     background-color: var(--mensage-bg-lose);
 }
 
-.modal-mensagem span.msgDraw
-{
+.modal-mensagem span.msgDraw {
     background-color: var(--mensage-bg-draw);
 }
 
