@@ -126,12 +126,15 @@ function jogar() {
         if (valorJogador > valorMaquina) {
             gameStatus = 3;
             imprimirMensagem("Você venceu!");
+            changeScore(3,0);
         } else if (valorJogador < valorMaquina) {
             gameStatus = 0;
             imprimirMensagem("Você perdeu!");
+            changeScore(0,3);
         } else {
             gameStatus = 1;
             imprimirMensagem("Deu empate!");
+            changeScore(1,1);
         }
 
         btnSortear.classList.remove("inactive");
@@ -223,4 +226,18 @@ function imprimirMensagem(mensagem) {
     }, 2500);
 
     return;
+}
+
+function changeScore(pPoint,mPoint) {
+    var playerScore = document.querySelector(".playerScore");
+    var machineScore = document.querySelector(".machineScore");
+    var pointsTemp = 0;
+
+    pointsTemp = parseInt(playerScore.value);
+    pointsTemp += pPoint;
+    playerScore.value = pointsTemp;
+
+    pointsTemp = parseInt(machineScore.value);
+    pointsTemp += mPoint;
+    machineScore.value = pointsTemp;
 }
