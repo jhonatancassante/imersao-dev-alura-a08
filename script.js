@@ -9,7 +9,7 @@ var cardPlayer = 0;
 var cardMachine = 0;
 var newGame = false;
 var gameStatus = 0;
-var foilChance = 10;
+var foilChance = 1;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
@@ -124,7 +124,7 @@ function jogar() {
         var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
 
         if (valorJogador > valorMaquina) {
-            gameStatus = 2;
+            gameStatus = 3;
             imprimirMensagem("Você venceu!");
         } else if (valorJogador < valorMaquina) {
             gameStatus = 0;
@@ -205,7 +205,7 @@ function imprimirMensagem(mensagem) {
     tagSpan.classList.add("animate__heartBeat");
     tagSpan.classList.add("center");
 
-    if (gameStatus == 2) {
+    if (gameStatus == 3) {
         tagSpan.classList.add("msgWin");
     }
     else if (gameStatus == 0) {
