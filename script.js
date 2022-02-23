@@ -9,6 +9,7 @@ var cardPlayer = 0;
 var cardMachine = 0;
 var newGame = false;
 var gameStatus = 0;
+var foilChance = 10;
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
@@ -20,10 +21,12 @@ function tirarCarta() {
         if (deck.length > 1) {
             cardMachine = sortearCarta();
             cardPlayer = sortearCarta();
+            pokeballSpin();
 
             contentM.classList.add("fliped");
             btnSortear.classList.add("inactive");
             contentP.classList.remove("fliped");
+            foilGeneretor();
             exibirCarta(cardPlayer, ".player");
             newGame = true;
         } else {
@@ -43,6 +46,28 @@ function sortearCarta() {
     deck.splice(indice, 1);
 
     return carta;
+}
+
+function pokeballSpin() {
+    var pokeball = document.querySelector(".pokeball");
+
+    pokeball.classList.toggle("spinPokeball");
+
+    return;
+}
+
+function foilGeneretor() {
+    var card = document.querySelector(".player");
+    var percent = parseInt(Math.random() * 100);
+
+    card.classList.remove("foil");
+
+    if (percent <= foilChance)
+    {
+        card.classList.add("foil");
+    }
+
+    return;
 }
 
 function exibirCarta(carta, who) {
@@ -67,8 +92,6 @@ function exibirCarta(carta, who) {
     spatk.innerHTML = '';
     spdef.innerHTML = '';
     speed.innerHTML = '';
-
-
 
     cardImg.appendChild(tagImage);
 
@@ -161,6 +184,7 @@ function cleanSelectionAtrib() {
             item.checked = false;
         }
     }
+
     return;
 }
 
@@ -187,7 +211,7 @@ function imprimirMensagem(mensagem) {
     else if (gameStatus == 0) {
         tagSpan.classList.add("msgLose");
     }
-    else if (gameStatus == 1){
+    else if (gameStatus == 1) {
         tagSpan.classList.add("msgDraw");
     }
     else {
