@@ -13,7 +13,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/001.png",
+            linkImg: "./img/pokemons/001.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -32,7 +32,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/002.png",
+            linkImg: "./img/pokemons/002.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -51,7 +51,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/003.png",
+            linkImg: "./img/pokemons/003.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -70,7 +70,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/003M.png",
+            linkImg: "./img/pokemons/003M.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -89,7 +89,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/004.png",
+            linkImg: "./img/pokemons/004.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -108,7 +108,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/005.png",
+            linkImg: "./img/pokemons/005.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -127,7 +127,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/006.png",
+            linkImg: "./img/pokemons/006.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -146,7 +146,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/006M-X.png",
+            linkImg: "./img/pokemons/006M-X.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -165,7 +165,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/006M-Y.png",
+            linkImg: "./img/pokemons/006M-Y.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -184,7 +184,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/007.png",
+            linkImg: "./img/pokemons/007.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -203,7 +203,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/008.png",
+            linkImg: "./img/pokemons/008.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -222,7 +222,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/009.png",
+            linkImg: "./img/pokemons/009.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -241,7 +241,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/009M.png",
+            linkImg: "./img/pokemons/009M.png",
             linkTipo1: "",
             linkTipo2: ""
         }
@@ -260,7 +260,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/010.png",
+            linkImg: "./img/pokemons/010.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -279,7 +279,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/011.png",
+            linkImg: "./img/pokemons/011.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -298,7 +298,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/012.png",
+            linkImg: "./img/pokemons/012.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -317,7 +317,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/013.png",
+            linkImg: "./img/pokemons/013.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -336,7 +336,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/014.png",
+            linkImg: "./img/pokemons/014.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -355,7 +355,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/015.png",
+            linkImg: "./img/pokemons/015.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -374,7 +374,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/015M.png",
+            linkImg: "./img/pokemons/015M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -393,7 +393,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/016.png",
+            linkImg: "./img/pokemons/016.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -412,7 +412,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/017.png",
+            linkImg: "./img/pokemons/017.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -431,7 +431,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/018.png",
+            linkImg: "./img/pokemons/018.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -450,7 +450,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/018M.png",
+            linkImg: "./img/pokemons/018M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -469,7 +469,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/019.png",
+            linkImg: "./img/pokemons/019.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -488,7 +488,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/019A.png",
+            linkImg: "./img/pokemons/019A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -507,7 +507,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/020.png",
+            linkImg: "./img/pokemons/020.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -526,7 +526,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/020A.png",
+            linkImg: "./img/pokemons/020A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -545,7 +545,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/021.png",
+            linkImg: "./img/pokemons/021.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -564,7 +564,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/022.png",
+            linkImg: "./img/pokemons/022.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -583,7 +583,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/023.png",
+            linkImg: "./img/pokemons/023.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -602,7 +602,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/024.png",
+            linkImg: "./img/pokemons/024.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -621,7 +621,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/025.png",
+            linkImg: "./img/pokemons/025.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -640,7 +640,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/025LG.png",
+            linkImg: "./img/pokemons/025LG.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -659,7 +659,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/026.png",
+            linkImg: "./img/pokemons/026.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -678,7 +678,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/026A.png",
+            linkImg: "./img/pokemons/026A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -697,7 +697,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/027.png",
+            linkImg: "./img/pokemons/027.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -716,7 +716,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/027A.png",
+            linkImg: "./img/pokemons/027A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -735,7 +735,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/028.png",
+            linkImg: "./img/pokemons/028.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -754,7 +754,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/028A.png",
+            linkImg: "./img/pokemons/028A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -773,7 +773,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/029.png",
+            linkImg: "./img/pokemons/029.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -792,7 +792,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/030.png",
+            linkImg: "./img/pokemons/030.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -811,7 +811,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/031.png",
+            linkImg: "./img/pokemons/031.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -830,7 +830,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/032.png",
+            linkImg: "./img/pokemons/032.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -849,7 +849,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/033.png",
+            linkImg: "./img/pokemons/033.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -868,7 +868,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/034.png",
+            linkImg: "./img/pokemons/034.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -887,7 +887,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/035.png",
+            linkImg: "./img/pokemons/035.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -906,7 +906,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/036.png",
+            linkImg: "./img/pokemons/036.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -925,7 +925,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/037.png",
+            linkImg: "./img/pokemons/037.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -944,7 +944,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/037A.png",
+            linkImg: "./img/pokemons/037A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -963,7 +963,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/038.png",
+            linkImg: "./img/pokemons/038.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -982,7 +982,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/038A.png",
+            linkImg: "./img/pokemons/038A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1001,7 +1001,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/039.png",
+            linkImg: "./img/pokemons/039.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1020,7 +1020,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/040.png",
+            linkImg: "./img/pokemons/040.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1039,7 +1039,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/041.png",
+            linkImg: "./img/pokemons/041.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1058,7 +1058,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/042.png",
+            linkImg: "./img/pokemons/042.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1077,7 +1077,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/043.png",
+            linkImg: "./img/pokemons/043.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1096,7 +1096,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/044.png",
+            linkImg: "./img/pokemons/044.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1115,7 +1115,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/045.png",
+            linkImg: "./img/pokemons/045.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1134,7 +1134,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/046.png",
+            linkImg: "./img/pokemons/046.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1153,7 +1153,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/047.png",
+            linkImg: "./img/pokemons/047.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1172,7 +1172,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/048.png",
+            linkImg: "./img/pokemons/048.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1191,7 +1191,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/049.png",
+            linkImg: "./img/pokemons/049.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1210,7 +1210,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/050.png",
+            linkImg: "./img/pokemons/050.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1229,7 +1229,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/050A.png",
+            linkImg: "./img/pokemons/050A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1248,7 +1248,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/051.png",
+            linkImg: "./img/pokemons/051.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1267,7 +1267,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/051A.png",
+            linkImg: "./img/pokemons/051A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1286,7 +1286,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/052.png",
+            linkImg: "./img/pokemons/052.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1305,7 +1305,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/052A.png",
+            linkImg: "./img/pokemons/052A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1324,7 +1324,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/052G.png",
+            linkImg: "./img/pokemons/052G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1343,7 +1343,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/053.png",
+            linkImg: "./img/pokemons/053.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1362,7 +1362,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/053A.png",
+            linkImg: "./img/pokemons/053A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1381,7 +1381,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/054.png",
+            linkImg: "./img/pokemons/054.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1400,7 +1400,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/055.png",
+            linkImg: "./img/pokemons/055.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1419,7 +1419,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/056.png",
+            linkImg: "./img/pokemons/056.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1438,7 +1438,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/057.png",
+            linkImg: "./img/pokemons/057.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1457,7 +1457,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/058.png",
+            linkImg: "./img/pokemons/058.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1476,7 +1476,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/059.png",
+            linkImg: "./img/pokemons/059.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1495,7 +1495,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/060.png",
+            linkImg: "./img/pokemons/060.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1514,7 +1514,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/061.png",
+            linkImg: "./img/pokemons/061.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1533,7 +1533,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/062.png",
+            linkImg: "./img/pokemons/062.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1552,7 +1552,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/063.png",
+            linkImg: "./img/pokemons/063.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1571,7 +1571,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/064.png",
+            linkImg: "./img/pokemons/064.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1590,7 +1590,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/065.png",
+            linkImg: "./img/pokemons/065.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1609,7 +1609,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/065M.png",
+            linkImg: "./img/pokemons/065M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1628,7 +1628,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/066.png",
+            linkImg: "./img/pokemons/066.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1647,7 +1647,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/067.png",
+            linkImg: "./img/pokemons/067.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1666,7 +1666,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/068.png",
+            linkImg: "./img/pokemons/068.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1685,7 +1685,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/069.png",
+            linkImg: "./img/pokemons/069.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1704,7 +1704,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/070.png",
+            linkImg: "./img/pokemons/070.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1723,7 +1723,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/071.png",
+            linkImg: "./img/pokemons/071.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1742,7 +1742,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/072.png",
+            linkImg: "./img/pokemons/072.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1761,7 +1761,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/073.png",
+            linkImg: "./img/pokemons/073.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1780,7 +1780,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/074.png",
+            linkImg: "./img/pokemons/074.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1799,7 +1799,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/074A.png",
+            linkImg: "./img/pokemons/074A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1818,7 +1818,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/075.png",
+            linkImg: "./img/pokemons/075.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1837,7 +1837,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/075A.png",
+            linkImg: "./img/pokemons/075A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1856,7 +1856,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/076.png",
+            linkImg: "./img/pokemons/076.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1875,7 +1875,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/076A.png",
+            linkImg: "./img/pokemons/076A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1894,7 +1894,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/077.png",
+            linkImg: "./img/pokemons/077.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1913,7 +1913,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/077G.png",
+            linkImg: "./img/pokemons/077G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1932,7 +1932,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/078.png",
+            linkImg: "./img/pokemons/078.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1951,7 +1951,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/078G.png",
+            linkImg: "./img/pokemons/078G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1970,7 +1970,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/079.png",
+            linkImg: "./img/pokemons/079.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -1989,7 +1989,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/079G.png",
+            linkImg: "./img/pokemons/079G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2008,7 +2008,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/080.png",
+            linkImg: "./img/pokemons/080.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2027,7 +2027,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/080G.png",
+            linkImg: "./img/pokemons/080G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2046,7 +2046,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/080M.png",
+            linkImg: "./img/pokemons/080M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2065,7 +2065,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/081.png",
+            linkImg: "./img/pokemons/081.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2084,7 +2084,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/082.png",
+            linkImg: "./img/pokemons/082.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2103,7 +2103,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/083.png",
+            linkImg: "./img/pokemons/083.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2122,7 +2122,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/083G.png",
+            linkImg: "./img/pokemons/083G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2141,7 +2141,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/084.png",
+            linkImg: "./img/pokemons/084.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2160,7 +2160,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/085.png",
+            linkImg: "./img/pokemons/085.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2179,7 +2179,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/086.png",
+            linkImg: "./img/pokemons/086.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2198,7 +2198,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/087.png",
+            linkImg: "./img/pokemons/087.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2217,7 +2217,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/088.png",
+            linkImg: "./img/pokemons/088.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2236,7 +2236,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/088A.png",
+            linkImg: "./img/pokemons/088A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2255,7 +2255,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/089.png",
+            linkImg: "./img/pokemons/089.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2274,7 +2274,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/089A.png",
+            linkImg: "./img/pokemons/089A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2293,7 +2293,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/090.png",
+            linkImg: "./img/pokemons/090.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2312,7 +2312,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/091.png",
+            linkImg: "./img/pokemons/091.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2331,7 +2331,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/092.png",
+            linkImg: "./img/pokemons/092.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2350,7 +2350,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/093.png",
+            linkImg: "./img/pokemons/093.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2369,7 +2369,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/094.png",
+            linkImg: "./img/pokemons/094.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2388,7 +2388,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/094M.png",
+            linkImg: "./img/pokemons/094M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2407,7 +2407,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/095.png",
+            linkImg: "./img/pokemons/095.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2426,7 +2426,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/096.png",
+            linkImg: "./img/pokemons/096.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2445,7 +2445,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/097.png",
+            linkImg: "./img/pokemons/097.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2464,7 +2464,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/098.png",
+            linkImg: "./img/pokemons/098.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2483,7 +2483,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/099.png",
+            linkImg: "./img/pokemons/099.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2502,7 +2502,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/100.png",
+            linkImg: "./img/pokemons/100.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2521,7 +2521,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/101.png",
+            linkImg: "./img/pokemons/101.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2540,7 +2540,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/102.png",
+            linkImg: "./img/pokemons/102.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2559,7 +2559,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/103.png",
+            linkImg: "./img/pokemons/103.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2578,7 +2578,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/103A.png",
+            linkImg: "./img/pokemons/103A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2597,7 +2597,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/104.png",
+            linkImg: "./img/pokemons/104.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2616,7 +2616,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/105.png",
+            linkImg: "./img/pokemons/105.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2635,7 +2635,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/105A.png",
+            linkImg: "./img/pokemons/105A.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2654,7 +2654,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/106.png",
+            linkImg: "./img/pokemons/106.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2673,7 +2673,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/107.png",
+            linkImg: "./img/pokemons/107.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2692,7 +2692,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/108.png",
+            linkImg: "./img/pokemons/108.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2711,7 +2711,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/109.png",
+            linkImg: "./img/pokemons/109.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2730,7 +2730,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/110.png",
+            linkImg: "./img/pokemons/110.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2749,7 +2749,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/110G.png",
+            linkImg: "./img/pokemons/110G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2768,7 +2768,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/111.png",
+            linkImg: "./img/pokemons/111.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2787,7 +2787,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/112.png",
+            linkImg: "./img/pokemons/112.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2806,7 +2806,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/113.png",
+            linkImg: "./img/pokemons/113.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2825,7 +2825,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/114.png",
+            linkImg: "./img/pokemons/114.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2844,7 +2844,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/115.png",
+            linkImg: "./img/pokemons/115.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2863,7 +2863,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/115M.png",
+            linkImg: "./img/pokemons/115M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2882,7 +2882,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/116.png",
+            linkImg: "./img/pokemons/116.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2901,7 +2901,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/117.png",
+            linkImg: "./img/pokemons/117.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2920,7 +2920,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/118.png",
+            linkImg: "./img/pokemons/118.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2939,7 +2939,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/119.png",
+            linkImg: "./img/pokemons/119.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2958,7 +2958,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/120.png",
+            linkImg: "./img/pokemons/120.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2977,7 +2977,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/121.png",
+            linkImg: "./img/pokemons/121.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -2996,7 +2996,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/122.png",
+            linkImg: "./img/pokemons/122.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3015,7 +3015,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/122G.png",
+            linkImg: "./img/pokemons/122G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3034,7 +3034,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/123.png",
+            linkImg: "./img/pokemons/123.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3053,7 +3053,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/124.png",
+            linkImg: "./img/pokemons/124.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3072,7 +3072,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/125.png",
+            linkImg: "./img/pokemons/125.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3091,7 +3091,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/126.png",
+            linkImg: "./img/pokemons/126.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3110,7 +3110,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/127.png",
+            linkImg: "./img/pokemons/127.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3129,7 +3129,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/127M.png",
+            linkImg: "./img/pokemons/127M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3148,7 +3148,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/128.png",
+            linkImg: "./img/pokemons/128.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3167,7 +3167,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/129.png",
+            linkImg: "./img/pokemons/129.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3186,7 +3186,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/130.png",
+            linkImg: "./img/pokemons/130.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3205,7 +3205,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/130M.png",
+            linkImg: "./img/pokemons/130M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3224,7 +3224,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/131.png",
+            linkImg: "./img/pokemons/131.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3243,7 +3243,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/132.png",
+            linkImg: "./img/pokemons/132.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3262,7 +3262,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/133.png",
+            linkImg: "./img/pokemons/133.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3281,7 +3281,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/133LG.png",
+            linkImg: "./img/pokemons/133LG.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3300,7 +3300,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/134.png",
+            linkImg: "./img/pokemons/134.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3319,7 +3319,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/135.png",
+            linkImg: "./img/pokemons/135.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3338,7 +3338,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/136.png",
+            linkImg: "./img/pokemons/136.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3357,7 +3357,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/137.png",
+            linkImg: "./img/pokemons/137.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3376,7 +3376,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/138.png",
+            linkImg: "./img/pokemons/138.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3395,7 +3395,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/139.png",
+            linkImg: "./img/pokemons/139.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3414,7 +3414,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/140.png",
+            linkImg: "./img/pokemons/140.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3433,7 +3433,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/141.png",
+            linkImg: "./img/pokemons/141.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3452,7 +3452,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/142.png",
+            linkImg: "./img/pokemons/142.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3471,7 +3471,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/142M.png",
+            linkImg: "./img/pokemons/142M.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3490,7 +3490,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/143.png",
+            linkImg: "./img/pokemons/143.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3509,7 +3509,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/144.png",
+            linkImg: "./img/pokemons/144.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3528,7 +3528,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/144G.png",
+            linkImg: "./img/pokemons/144G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3547,7 +3547,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/145.png",
+            linkImg: "./img/pokemons/145.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3566,7 +3566,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/145G.png",
+            linkImg: "./img/pokemons/145G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3585,7 +3585,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/146.png",
+            linkImg: "./img/pokemons/146.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3604,7 +3604,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/146G.png",
+            linkImg: "./img/pokemons/146G.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3623,7 +3623,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/147.png",
+            linkImg: "./img/pokemons/147.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3642,7 +3642,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/148.png",
+            linkImg: "./img/pokemons/148.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3661,7 +3661,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/149.png",
+            linkImg: "./img/pokemons/149.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3680,7 +3680,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/150.png",
+            linkImg: "./img/pokemons/150.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3699,7 +3699,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/150M-X.png",
+            linkImg: "./img/pokemons/150M-X.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3718,7 +3718,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/150M-Y.png",
+            linkImg: "./img/pokemons/150M-Y.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
@@ -3737,7 +3737,7 @@ function pokemons() {
         },
         links: {
             linkIcon: "",
-            linkImg: "./img/151.png",
+            linkImg: "./img/pokemons/151.png",
             llinkTipo1: "",
             llinkTipo2: ""
         }
