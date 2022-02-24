@@ -31,8 +31,11 @@ function tirarCarta() {
             newGame = true;
         } else {
             deck = pokemons();
-            imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.");
+            imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.", 2250);
         }
+        setTimeout(() => {
+            pokeballSpin();
+        }, 2000)
     }
 
     return;
@@ -62,8 +65,7 @@ function foilGeneretor() {
 
     card.classList.remove("foil");
 
-    if (percent <= foilChance)
-    {
+    if (percent <= foilChance) {
         card.classList.add("foil");
     }
 
@@ -71,6 +73,7 @@ function foilGeneretor() {
 }
 
 function exibirCarta(carta, who) {
+    var content = document.querySelector(who + " .content");
     var cardNumber = document.querySelector(who + " .cardNumber");
     var cardName = document.querySelector(who + " .cardName");
     var cardImg = document.querySelector(who + " .cardImg");
@@ -105,7 +108,85 @@ function exibirCarta(carta, who) {
     spdef.innerHTML = carta.atributos.spDefesa;
     speed.innerHTML = carta.atributos.speed;
 
+    content.style.backgroundImage = cardColor(carta.tipos.primario, carta.tipos.secundario)
+
     return;
+}
+
+function cardColor(primario, secundario) {
+    var color1 = typeColor(primario);
+    var color2 = typeColor(secundario);
+
+    if (secundario === "") {
+        color2 = typeColor(primario);
+    }
+
+    return "linear-gradient(" + color1 + " 0%, " + color1 + " 50%, " + color2 + " 80%, " + color2 + " 100%)";
+}
+
+function typeColor(type) {
+    var color = "";
+
+    switch (type) {
+        case 'Bug':
+            color = "#90c12c";
+            break;
+        case 'Dark':
+            color = "#5a5366";
+            break;
+        case 'Dragon':
+            color = "#0a6dc4";
+            break;
+        case 'Electric':
+            color = "#f3d23b";
+            break;
+        case 'Fairy':
+            color = "#ec8fe6";
+            break;
+        case 'Fighting':
+            color = "#ce4069";
+            break;
+        case 'Fire':
+            color = "#ff9c54";
+            break;
+        case 'Flying':
+            color = "#8fa8dd";
+            break;
+        case 'Ghost':
+            color = "#5269ac";
+            break;
+        case 'Grass':
+            color = "#63bb5b";
+            break;
+        case 'Ground':
+            color = "#d97746";
+            break;
+        case 'Ice':
+            color = "#74cec0";
+            break;
+        case 'Normal':
+            color = "#9099a1";
+            break;
+        case 'Poison':
+            color = "#ab6ac8";
+            break;
+        case 'Psychic':
+            color = "#f97176";
+            break;
+        case 'Rock':
+            color = "#c7b78b";
+            break;
+        case 'Steel':
+            color = "#5a8ea1";
+            break;
+        case 'Water':
+            color = "#4d90d5";
+            break;
+        default:
+            color = "#f8f8f8";
+    }
+
+    return color;
 }
 
 function atribSelected() {
@@ -122,19 +203,20 @@ function jogar() {
         var valorJogador = cardPlayer.atributos[atributoSelecionado];
         var valorMaquina = cardMachine.atributos[atributoSelecionado];
         var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
+        var msgTime = 1000;
 
         if (valorJogador > valorMaquina) {
             gameStatus = 3;
-            imprimirMensagem("Você venceu!");
-            changeScore(3,0);
+            imprimirMensagem("Você venceu!", msgTime);
+            changeScore(3, 0);
         } else if (valorJogador < valorMaquina) {
             gameStatus = 0;
-            imprimirMensagem("Você perdeu!");
-            changeScore(0,3);
+            imprimirMensagem("Você perdeu!", msgTime);
+            changeScore(0, 3);
         } else {
             gameStatus = 1;
-            imprimirMensagem("Deu empate!");
-            changeScore(1,1);
+            imprimirMensagem("Deu empate!", msgTime);
+            changeScore(1, 1);
         }
 
         btnSortear.classList.remove("inactive");
@@ -181,6 +263,9 @@ function selectMachineAtrib(selectMachine) {
 
 function cleanSelectionAtrib() {
     var atributo = document.getElementsByName("atributos");
+    var content = document.querySelector(".machine .content");
+
+    content.style.backgroundImage = "none";
 
     for (var item of atributo) {
         if (item.checked) {
@@ -191,7 +276,7 @@ function cleanSelectionAtrib() {
     return;
 }
 
-function imprimirMensagem(mensagem) {
+function imprimirMensagem(mensagem, time) {
     let tagBody = document.querySelector("body");
 
     let tagSpan = document.createElement("span");
@@ -223,12 +308,12 @@ function imprimirMensagem(mensagem) {
 
     setTimeout(() => {
         tagDiv.remove();
-    }, 2500);
+    }, time);
 
     return;
 }
 
-function changeScore(pPoint,mPoint) {
+function changeScore(pPoint, mPoint) {
     var playerScore = document.querySelector(".playerScore");
     var machineScore = document.querySelector(".machineScore");
     var pointsTemp = 0;
