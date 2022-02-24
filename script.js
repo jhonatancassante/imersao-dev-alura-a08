@@ -109,6 +109,7 @@ function exibirCarta(carta, who) {
     speed.innerHTML = carta.atributos.speed;
 
     cardImg.style.backgroundImage = "url(" + carta.links.linkBg + ")";
+    cardImg.style.border = "2px solid " + typeColor(carta.tipos.primario);
     content.style.backgroundImage = cardColor(carta.tipos.primario, carta.tipos.secundario)
 
     return;
