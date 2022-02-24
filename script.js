@@ -108,6 +108,7 @@ function exibirCarta(carta, who) {
     spdef.innerHTML = carta.atributos.spDefesa;
     speed.innerHTML = carta.atributos.speed;
 
+    cardImg.style.backgroundImage = "url(" + carta.links.linkBg + ")";
     content.style.backgroundImage = cardColor(carta.tipos.primario, carta.tipos.secundario)
 
     return;
