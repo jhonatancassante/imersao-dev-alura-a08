@@ -31,7 +31,7 @@ function tirarCarta() {
             newGame = true;
         } else {
             deck = pokemons();
-            imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.", 2250);
+            imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.", 3000);
         }
         setTimeout(() => {
             pokeballSpin();
@@ -123,7 +123,7 @@ function cardColor(primario, secundario) {
         color2 = typeColor(primario);
     }
 
-    return "linear-gradient(" + color1 + " 0%, " + color1 + " 50%, " + color2 + " 80%, " + color2 + " 100%)";
+    return "linear-gradient(" + color1 + " 0%, " + color1 + " 45%, " + color2 + " 75%, " + color2 + " 100%)";
 }
 
 function typeColor(type) {
@@ -205,7 +205,7 @@ function jogar() {
         var valorJogador = cardPlayer.atributos[atributoSelecionado];
         var valorMaquina = cardMachine.atributos[atributoSelecionado];
         var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
-        var msgTime = 1000;
+        var msgTime = 2000;
 
         if (valorJogador > valorMaquina) {
             gameStatus = 3;
@@ -282,18 +282,20 @@ function imprimirMensagem(mensagem, time) {
     let tagBody = document.querySelector("body");
 
     let tagSpan = document.createElement("span");
-    let tagDiv = document.createElement("div");
+    let tagDiv1 = document.createElement("div");
+    let tagDiv2 = document.createElement("div");
 
-    tagDiv.appendChild(tagSpan);
-    tagBody.appendChild(tagDiv);
+    tagDiv2.appendChild(tagSpan);
+    tagDiv1.appendChild(tagDiv2);
+    tagBody.appendChild(tagDiv1);
 
-    tagDiv.classList.add("modal-mensagem");
-    tagDiv.classList.add("center");
+    tagDiv1.classList.add("modal-mensagem");
+    tagDiv1.classList.add("center");
 
     tagSpan.innerHTML = mensagem;
-    tagSpan.classList.add("animate__animated");
-    tagSpan.classList.add("animate__heartBeat");
-    tagSpan.classList.add("center");
+    tagDiv2.classList.add("animate__animated");
+    tagDiv2.classList.add("animate__pulse");
+    tagDiv2.classList.add("center");
 
     if (gameStatus == 3) {
         tagSpan.classList.add("msgWin");
@@ -309,7 +311,7 @@ function imprimirMensagem(mensagem, time) {
     }
 
     setTimeout(() => {
-        tagDiv.remove();
+        tagDiv1.remove();
     }, time);
 
     return;

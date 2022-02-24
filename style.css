@@ -453,7 +453,26 @@ body {
     overflow: hidden;
 }
 
+.modal-mensagem div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--card-border-color);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1),
+        10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 .modal-mensagem span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 100px;
     left: 0;
@@ -462,6 +481,7 @@ body {
     position: relative;
     border-radius: 10px;
     text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
+    border: 1px solid rgba(255,255,255,0.7);
 }
 
 .center {
