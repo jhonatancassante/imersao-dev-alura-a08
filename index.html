@@ -37,40 +37,40 @@
                     </div>
                     <div class="cardCenter">
                         <div class="cardTypes">
-                            <span class="typeOne"></span>
-                            <span class="typeTwo"></span>
+                            <span class="typeOne" onclick="selectType(1)"></span>
+                            <span class="typeTwo" onclick="selectType(2)"></span>
                         </div>
                         <div class="cardImg"> </div>
                     </div>
                     <div class="cardAtribs">
                         <label class="atrib" for="hp">
                             <div class="atribName">HP:</div>
-                            <input type="radio" id="hp" name="atributos" value="hp" onclick="atribSelected()">
+                            <input type="radio" id="hp" name="atributos" value="hp" onclick="atribClicked()">
                             <div class="hp"></div>
                         </label>
                         <label class="atrib" for="atk">
                             <div class="atribName">ATK:</div>
-                            <input type="radio" id="atk" name="atributos" onclick="atribSelected()" value="ataque">
+                            <input type="radio" id="atk" name="atributos" onclick="atribClicked()" value="ataque">
                             <div class="ataque"></div>
                         </label>
                         <label class="atrib" for="def">
                             <div class="atribName">DEF:</div>
-                            <input type="radio" id="def" name="atributos" onclick="atribSelected()" value="defesa">
+                            <input type="radio" id="def" name="atributos" onclick="atribClicked()" value="defesa">
                             <div class="defesa"></div>
                         </label>
                         <label class="atrib" for="spatk">
                             <div class="atribName">SPATK:</div>
-                            <input type="radio" id="spatk" name="atributos" onclick="atribSelected()" value="spAtaque">
+                            <input type="radio" id="spatk" name="atributos" onclick="atribClicked()" value="spAtaque">
                             <div class="spAtaque"></div>
                         </label>
                         <label class="atrib" for="spdef">
                             <div class="atribName">SPDEF:</div>
-                            <input type="radio" id="spdef" name="atributos" onclick="atribSelected()" value="spDefesa">
+                            <input type="radio" id="spdef" name="atributos" onclick="atribClicked()" value="spDefesa">
                             <div class="spDefesa"></div>
                         </label>
                         <label class="atrib" for="speed">
                             <div class="atribName">SPEED:</div>
-                            <input type="radio" id="speed" name="atributos" onclick="atribSelected()" value="speed">
+                            <input type="radio" id="speed" name="atributos" onclick="atribClicked()" value="speed">
                             <div class="speed"></div>
                         </label>
                     </div>

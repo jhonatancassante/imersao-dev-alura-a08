@@ -7,9 +7,10 @@ let choice = document.querySelector(".choice");
 var deck = pokemons();
 var cardPlayer = 0;
 var cardMachine = 0;
-var newGame = false;
+var atribSelected = 0;
 var gameStatus = 0;
 var foilChance = 1;
+var typeSelected = "";
 
 function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
@@ -28,7 +29,6 @@ function tirarCarta() {
             contentP.classList.remove("fliped");
             foilGeneretor();
             exibirCarta(cardPlayer, ".player");
-            newGame = true;
         } else {
             deck = pokemons();
             imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.", 3000);
@@ -78,6 +78,7 @@ function exibirCarta(carta, who) {
     var cardName = document.querySelector(who + " .cardName");
     var typeOne = document.querySelector(who + " .typeOne");
     var typeOneImage = document.createElement("img");
+    var typeTwo = document.querySelector(who + " .typeTwo");
     var cardImg = document.querySelector(who + " .cardImg");
     var pokeImage = document.createElement("img");
     var hp = document.querySelector(who + " .hp");
@@ -89,8 +90,9 @@ function exibirCarta(carta, who) {
 
     cardNumber.innerHTML = '';
     cardName.innerHTML = '';
+    typeOne.innerHTML = '';
+    typeTwo.innerHTML = '';
     cardImg.innerHTML = '';
-    pokeImage.innerHTML = '';
     hp.innerHTML = '';
     atk.innerHTML = '';
     def.innerHTML = '';
@@ -99,7 +101,6 @@ function exibirCarta(carta, who) {
     speed.innerHTML = '';
 
     typeOne.appendChild(typeOneImage);
-
     cardImg.appendChild(pokeImage);
 
     cardNumber.innerHTML = carta.number;
@@ -107,10 +108,14 @@ function exibirCarta(carta, who) {
     typeOneImage.src = carta.links.linkTipo1;
     typeOneImage.alt = carta.tipos.primario;
 
+    typeOne.classList.remove("typeActive");
+    typeTwo.classList.remove("typeActive");
+
     if (carta.tipos.secundario != "") {
-        var typeTwo = document.querySelector(who + " .typeTwo");
         var typeTwoImage = document.createElement("img");
+
         typeTwo.appendChild(typeTwoImage);
+
         typeTwoImage.src = carta.links.linkTipo2;
         typeTwoImage.alt = carta.tipos.secundario;
     }
@@ -207,8 +212,14 @@ function typeColor(type) {
     return color;
 }
 
-function atribSelected() {
-    if (newGame == true) {
+function atribClicked() {
+    atribSelected = 1;
+
+    verifySelections();
+}
+
+function verifySelections() {
+    if (atribSelected == 1 && typeSelected != "") {
         btnJogar.classList.remove("inactive");
     }
 }
@@ -242,7 +253,8 @@ function jogar() {
         selectMachineAtrib(selectMachine);
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
-        newGame = false;
+        typeSelected = "";
+        atribSelected = 0;
         choice.innerHTML = '';
         choice.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
     }
@@ -346,3 +358,23 @@ function changeScore(pPoint, mPoint) {
     pointsTemp += mPoint;
     machineScore.value = pointsTemp;
 }
+
+function selectType(typeNum) {
+    var typeOne = document.querySelector(".typeOne");
+    var typeTwo = document.querySelector(".typeTwo");
+
+    if (typeNum == 1) {
+        typeOne.classList.add("typeActive");
+        typeTwo.classList.remove("typeActive");
+        typeSelected = cardPlayer.tipos.primario;
+    } else if (typeNum == 2) {
+        typeOne.classList.remove("typeActive");
+        typeTwo.classList.add("typeActive");
+        typeSelected = cardPlayer.tipos.secundario;
+    }
+
+    verifySelections();
+
+    return;
+}
+
