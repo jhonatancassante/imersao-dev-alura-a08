@@ -11,11 +11,13 @@ var atribSelected = "";
 var gameStatus = 0;
 var foilChance = 1;
 var typeSelected = "";
+var newGame = 0;
 
 function tirarCarta() {
     clearBonus();
 
     if (!btnSortear.classList.contains("inactive")) {
+        newGame = 1;
         gameStatus = -1;
         choice.innerHTML = '';
         choice.innerHTML = 'Clique em um atributo e tipo para escolher qual jogar...';
@@ -236,7 +238,7 @@ function atribClicked(tagValue) {
 }
 
 function verifySelections() {
-    if (atribSelected != "" && typeSelected != "") {
+    if (atribSelected != "" && typeSelected != "" && newGame == 1) {
         btnJogar.classList.remove("inactive");
     }
 }
@@ -249,21 +251,12 @@ function jogar() {
         var selectMachine = document.querySelector(".machine ." + atribSelected);
         var msgTime = 2000;
         var atribSel = document.querySelector(".player div." + atribSelected);
-        var multiplier = document.querySelector(".multiplier");
         var bonusAplicado = Math.round(bonusCalc());
 
         valorJogador = Math.round(valorJogador * bonusAplicado);
         atribSel.innerHTML = valorJogador;
 
-        if (bonusAplicado > 1) {
-            atribSel.classList.add("buff");
-            multiplier.classList.add("buff");
-            multiplier.innerHTML = "x" + bonusAplicado;
-        } else if (bonusAplicado < 1) {
-            atribSel.classList.add("debuff");
-            multiplier.classList.add("debuff");
-            multiplier.innerHTML = "x" + bonusAplicado;
-        }
+        aplyMultiplier(atribSel,bonusAplicado);
 
         if (valorJogador > valorMaquina) {
             gameStatus = 3;
@@ -286,7 +279,24 @@ function jogar() {
         btnJogar.classList.add("inactive");
         typeSelected = "";
         choice.innerHTML = '';
+        newGame = 0;
         choice.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
+    }
+
+    return;
+}
+
+function aplyMultiplier(atribSel, bonusAplicado) {
+    var multiplier = document.querySelector(".multiplier");
+
+    if (bonusAplicado > 1) {
+        atribSel.classList.add("buff");
+        multiplier.classList.add("buff");
+        multiplier.innerHTML = "x" + bonusAplicado;
+    } else if (bonusAplicado < 1) {
+        atribSel.classList.add("debuff");
+        multiplier.classList.add("debuff");
+        multiplier.innerHTML = "x" + bonusAplicado;
     }
 
     return;
