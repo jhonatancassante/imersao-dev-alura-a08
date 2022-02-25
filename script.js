@@ -47,10 +47,14 @@ function tirarCarta() {
 function clearBonus() {
     if (atribSelected != "") {
         var atribSel = document.querySelector(".player ." + atribSelected);
+        var multiplier = document.querySelector(".multiplier");
         atribSel.classList.remove("buff");
         atribSel.classList.remove("debuff");
+        multiplier.classList.remove("buff");
+        multiplier.classList.remove("debuff");
         atribSelected = "";
         console.clear();
+        multiplier.innerHTML = "";
     }
 }
 
@@ -245,15 +249,20 @@ function jogar() {
         var selectMachine = document.querySelector(".machine ." + atribSelected);
         var msgTime = 2000;
         var atribSel = document.querySelector(".player div." + atribSelected);
-        var bonusAplicado = bonusCalc();
+        var multiplier = document.querySelector(".multiplier");
+        var bonusAplicado = Math.round(bonusCalc());
 
         valorJogador = Math.round(valorJogador * bonusAplicado);
         atribSel.innerHTML = valorJogador;
 
         if (bonusAplicado > 1) {
             atribSel.classList.add("buff");
+            multiplier.classList.add("buff");
+            multiplier.innerHTML = "x" + bonusAplicado;
         } else if (bonusAplicado < 1) {
             atribSel.classList.add("debuff");
+            multiplier.classList.add("debuff");
+            multiplier.innerHTML = "x" + bonusAplicado;
         }
 
         if (valorJogador > valorMaquina) {

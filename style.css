@@ -327,6 +327,22 @@ body {
     z-index: 100;
 }
 
+.content .cardCenter .cardTypes .multiplier {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.content .cardCenter .cardTypes .multiplier.buff {
+    color: #0f0;
+    text-shadow: 0px 0px 5px #0f0;
+}
+
+.content .cardCenter .cardTypes .multiplier.debuff {
+    color: #f0f;
+    text-shadow: 0px 0px 5px #f0f;
+}
+
 .content .cardCenter .cardTypes img {
     position: relative;
     display: flex;
@@ -440,7 +456,6 @@ body {
         0px 0px 2px #f8f8f8;
 }
 
-.content .cardAtribs .atrib div.actived,
 .content .cardAtribs .atrib input:checked~div {
     border: 1px solid rgba(0, 255, 255, 0.5);
     font-weight: 600;
