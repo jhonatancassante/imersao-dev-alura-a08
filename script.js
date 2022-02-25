@@ -7,7 +7,9 @@ let choice = document.querySelector(".choice");
 var deck = pokemons();
 var cardPlayer = 0;
 var cardMachine = 0;
-var atribSelected = 0;
+var atribSelected = "";
+var valueAtribSel = 0;
+var oldAtrib = 0;
 var gameStatus = 0;
 var foilChance = 1;
 var typeSelected = "";
@@ -16,7 +18,7 @@ function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
         gameStatus = -1;
         choice.innerHTML = '';
-        choice.innerHTML = 'Clique em um atributo para escolher qual jogar...';
+        choice.innerHTML = 'Clique em um atributo e tipo para escolher qual jogar...';
         cleanSelectionAtrib();
 
         if (deck.length > 1) {
@@ -29,6 +31,7 @@ function tirarCarta() {
             contentP.classList.remove("fliped");
             foilGeneretor();
             exibirCarta(cardPlayer, ".player");
+            selectType(1);
         } else {
             deck = pokemons();
             imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.", 3000);
@@ -131,7 +134,7 @@ function exibirCarta(carta, who) {
 
     cardImg.style.backgroundImage = "url(" + carta.links.linkBg + ")";
     cardImg.style.border = "2px solid " + typeColor(carta.tipos.primario);
-    content.style.backgroundImage = cardColor(carta.tipos.primario, carta.tipos.secundario)
+    content.style.backgroundImage = cardColor(carta.tipos.primario, carta.tipos.secundario);
 
     return;
 }
@@ -212,14 +215,14 @@ function typeColor(type) {
     return color;
 }
 
-function atribClicked() {
-    atribSelected = 1;
+function atribClicked(tagValue) {
+    atribSelected = tagValue;
 
     verifySelections();
 }
 
 function verifySelections() {
-    if (atribSelected == 1 && typeSelected != "") {
+    if (atribSelected != "" && typeSelected != "") {
         btnJogar.classList.remove("inactive");
     }
 }
@@ -227,12 +230,12 @@ function verifySelections() {
 function jogar() {
     if (!btnJogar.classList.contains("inactive")) {
 
-        atributoSelecionado = obtemAtributo();
-
-        var valorJogador = cardPlayer.atributos[atributoSelecionado];
-        var valorMaquina = cardMachine.atributos[atributoSelecionado];
-        var selectMachine = document.querySelector(".machine ." + atributoSelecionado);
+        var valorJogador = cardPlayer.atributos[atribSelected];
+        var valorMaquina = cardMachine.atributos[atribSelected];
+        var selectMachine = document.querySelector(".machine ." + atribSelected);
         var msgTime = 2000;
+
+        console.log("Bonus: " + bonusCalc());
 
         if (valorJogador > valorMaquina) {
             gameStatus = 3;
@@ -260,16 +263,6 @@ function jogar() {
     }
 
     return;
-}
-
-function obtemAtributo() {
-    var atributo = document.getElementsByName("atributos");
-
-    for (var item of atributo) {
-        if (item.checked) {
-            return item.value;
-        }
-    }
 }
 
 function selectMachineAtrib(selectMachine) {
@@ -378,45 +371,119 @@ function selectType(typeNum) {
     return;
 }
 
-/*
-Types order:
-1-Bug
-2-Dark
-3-Dragon
-4-Electric
-5-Fairy
-6-Fire
-7-Fighting
-8-Flying
-9-Ghost
-10-Grass
-11-Ground
-12-Ice
-13-Normal
-14-Poison
-15-Psychic
-16-Rock
-17-Steel
-18-Water
-*/
+function bonusCalc() {
+    var bonusDamage = 0.00;
+    var type1Bonus = 0.00;
+    var type2Bonus = 1.00;
+    var index1 = 0;
+    var index2 = 0;
 
-const typesDamage = [
-    [1, 1.25, 1, 1, 0.8, 0.8, 0.8, 0.8, 0.8, 1.25, 1, 1, 1, 0.8, 1.25, 1, 0.8, 1],
-    [1, 0.8, 1, 1, 0.8, 1, 0.8, 1, 1.25, 1, 1, 1, 1, 1, 1.25, 1, 1, 1],
-    [1, 1, 1.25, 1, 0.6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.8, 1],
-    [1, 1, 0.8, 0.8, 1, 1, 1, 1.25, 1, 0.8, 0.6, 1, 1, 1, 1, 1, 1, 1.25],
-    [1, 1.25, 1.25, 1, 1, 0.8, 1.25, 1, 1, 1, 1, 1, 1, 0.8, 1, 1, 0.8, 1],
-    [1.25, 1, 0.8, 1, 1, 0.8, 1, 1, 1, 1.25, 1, 1.25, 1, 1, 1, 0.8, 1.25, 0.8],
-    [0.8, 1.25, 1, 1, 0.8, 1, 1, 0.8, 0.6, 1, 1, 1.25, 1.25, 0.8, 0.8, 1.25, 1.25, 1],
-    [1.25, 1, 1, 0.8, 1, 1, 1.25, 1, 1, 1.25, 1, 1, 1, 1, 1, 0.8, 0.8, 1],
-    [1, 0.8, 1, 1, 1, 1, 1, 1, 1.25, 1, 1, 1, 0.6, 1, 1.25, 1, 1, 1],
-    [0.8, 1, 0.8, 1, 1, 0.8, 1, 0.8, 1, 0.8, 1.25, 1, 1, 0.8, 1, 1.25, 0.8, 1.25],
-    [0.8, 1, 1, 1.25, 1, 1.25, 1, 0.6, 1, 0.8, 1, 1, 1, 1.25, 1, 1.25, 1.25, 1],
-    [1, 1, 1.25, 1, 1, 0.8, 1, 1.25, 1, 1.25, 1.25, 0.8, 1, 1, 1, 1, 0.8, 0.8],
-    [1, 1, 1, 1, 1, 1, 1, 1, 0.6, 1, 1, 1, 1, 1, 1, 0.8, 0.8, 1],
-    [1, 1, 1, 1, 1.25, 1, 1, 1, 0.8, 1.25, 0.8, 1, 1, 0.8, 1, 0.8, 0.6, 1],
-    [1, 0.6, 1, 1, 1, 1, 1.25, 1, 1, 1, 1, 1, 1, 1.25, 0.8, 1, 0.8, 1],
-    [1.25, 1, 1, 1, 1, 1.25, 0.8, 1.25, 1, 1, 0.8, 1.25, 1, 1, 1, 1, 0.8, 1],
-    [1, 1, 1, 0.8, 1.25, 0.8, 1, 1, 1, 1, 1, 1.25, 1, 1, 1, 1.25, 0.8, 0.8],
-    [1, 1, 0.8, 1, 1, 1.25, 1, 1, 11, 0.8, 1.25, 1, 1, 1, 1, 1.25, 1, 0.8]
-];
+    index1 = getTypeIndex(typeSelected);
+    console.log("Index 1: " + index1);
+    index2 = getTypeIndex(cardMachine.tipos.primario);
+    console.log("Index 2: " + index2);
+    type1Bonus = getTypeBunos(index1, index2);
+    console.log("Bonus 1: " + type1Bonus);
+
+    if (cardMachine.tipos.secundario != "") {
+        index2 = getTypeIndex(cardMachine.tipos.secundario);
+        console.log("Index 3: " + index2);
+        type2Bonus = getTypeBunos(index1, index2);
+        console.log("Bonus 2: " + type2Bonus);
+    }
+
+    bonusDamage = type1Bonus * type2Bonus;
+
+    return bonusDamage;
+}
+
+function getTypeIndex(type) {
+    var index = 0;
+
+    switch (type) {
+        case 'Bug':
+            index = 0;
+            break;
+        case 'Dark':
+            index = 1;
+            break;
+        case 'Dragon':
+            index = 2;
+            break;
+        case 'Electric':
+            index = 3;
+            break;
+        case 'Fairy':
+            index = 4;
+            break;
+        case 'Fighting':
+            index = 5;
+            break;
+        case 'Fire':
+            index = 6;
+            break;
+        case 'Flying':
+            index = 7;
+            break;
+        case 'Ghost':
+            index = 8;
+            break;
+        case 'Grass':
+            index = 9;
+            break;
+        case 'Ground':
+            index = 10;
+            break;
+        case 'Ice':
+            index = 11;
+            break;
+        case 'Normal':
+            index = 12;
+            break;
+        case 'Poison':
+            index = 13;
+            break;
+        case 'Psychic':
+            index = 14;
+            break;
+        case 'Rock':
+            index = 15;
+            break;
+        case 'Steel':
+            index = 16;
+            break;
+        case 'Water':
+            index = 17;
+            break;
+        default:
+            index = -1;
+    }
+
+    return index;
+}
+
+function getTypeBunos(typeIndAtk, typeIndDef) {
+    const typesDamage = [
+        [1.00, 1.25, 1.00, 1.00, 0.80, 0.80, 0.80, 0.80, 0.80, 1.25, 1.00, 1.00, 1.00, 0.80, 1.25, 1.00, 0.80, 1.00],
+        [1.00, 0.80, 1.00, 1.00, 0.80, 1.00, 0.80, 1.00, 1.25, 1.00, 1.00, 1.00, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00],
+        [1.00, 1.00, 1.25, 1.00, 0.60, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.80, 1.00],
+        [1.00, 1.00, 0.80, 0.80, 1.00, 1.00, 1.00, 1.25, 1.00, 0.80, 0.60, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.25],
+        [1.00, 1.25, 1.25, 1.00, 1.00, 0.80, 1.25, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.80, 1.00, 1.00, 0.80, 1.00],
+        [1.25, 1.00, 0.80, 1.00, 1.00, 0.80, 1.00, 1.00, 1.00, 1.25, 1.00, 1.25, 1.00, 1.00, 1.00, 0.80, 1.25, 0.80],
+        [0.80, 1.25, 1.00, 1.00, 0.80, 1.00, 1.00, 0.80, 0.60, 1.00, 1.00, 1.25, 1.25, 0.80, 0.80, 1.25, 1.25, 1.00],
+        [1.25, 1.00, 1.00, 0.80, 1.00, 1.00, 1.25, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00, 1.00, 1.00, 0.80, 0.80, 1.00],
+        [1.00, 0.80, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00, 0.60, 1.00, 1.25, 1.00, 1.00, 1.00],
+        [0.80, 1.00, 0.80, 1.00, 1.00, 0.80, 1.00, 0.80, 1.00, 0.80, 1.25, 1.00, 1.00, 0.80, 1.00, 1.25, 0.80, 1.25],
+        [0.80, 1.00, 1.00, 1.25, 1.00, 1.25, 1.00, 0.60, 1.00, 0.80, 1.00, 1.00, 1.00, 1.25, 1.00, 1.25, 1.25, 1.00],
+        [1.00, 1.00, 1.25, 1.00, 1.00, 0.80, 1.00, 1.25, 1.00, 1.25, 1.25, 0.80, 1.00, 1.00, 1.00, 1.00, 0.80, 0.80],
+        [1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.60, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.80, 0.80, 1.00],
+        [1.00, 1.00, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00, 0.80, 1.25, 0.80, 1.00, 1.00, 0.80, 1.00, 0.80, 0.60, 1.00],
+        [1.00, 0.60, 1.00, 1.00, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.25, 0.80, 1.00, 0.80, 1.00],
+        [1.25, 1.00, 1.00, 1.00, 1.00, 1.25, 0.80, 1.25, 1.00, 1.00, 0.80, 1.25, 1.00, 1.00, 1.00, 1.00, 0.80, 1.00],
+        [1.00, 1.00, 1.00, 0.80, 1.25, 0.80, 1.00, 1.00, 1.00, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00, 1.25, 0.80, 0.80],
+        [1.00, 1.00, 0.80, 1.00, 1.00, 1.25, 1.00, 1.00, 1.00, 0.80, 1.25, 1.00, 1.00, 1.00, 1.00, 1.25, 1.00, 0.80]
+    ];
+    var bonus = typesDamage[typeIndAtk][typeIndDef];
+
+    return bonus;
+}
