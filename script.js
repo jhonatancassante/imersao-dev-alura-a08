@@ -76,8 +76,10 @@ function exibirCarta(carta, who) {
     var content = document.querySelector(who + " .content");
     var cardNumber = document.querySelector(who + " .cardNumber");
     var cardName = document.querySelector(who + " .cardName");
+    var typeOne = document.querySelector(who + " .typeOne");
+    var typeOneImage = document.createElement("img");
     var cardImg = document.querySelector(who + " .cardImg");
-    var tagImage = document.createElement("img");
+    var pokeImage = document.createElement("img");
     var hp = document.querySelector(who + " .hp");
     var atk = document.querySelector(who + " .ataque");
     var def = document.querySelector(who + " .defesa");
@@ -88,7 +90,7 @@ function exibirCarta(carta, who) {
     cardNumber.innerHTML = '';
     cardName.innerHTML = '';
     cardImg.innerHTML = '';
-    tagImage.innerHTML = '';
+    pokeImage.innerHTML = '';
     hp.innerHTML = '';
     atk.innerHTML = '';
     def.innerHTML = '';
@@ -96,11 +98,25 @@ function exibirCarta(carta, who) {
     spdef.innerHTML = '';
     speed.innerHTML = '';
 
-    cardImg.appendChild(tagImage);
+    typeOne.appendChild(typeOneImage);
+
+    cardImg.appendChild(pokeImage);
 
     cardNumber.innerHTML = carta.number;
     cardName.innerHTML = carta.nome;
-    tagImage.src = carta.links.linkImg;
+    typeOneImage.src = carta.links.linkTipo1;
+    typeOneImage.alt = carta.tipos.primario;
+
+    if (carta.tipos.secundario != "") {
+        var typeTwo = document.querySelector(who + " .typeTwo");
+        var typeTwoImage = document.createElement("img");
+        typeTwo.appendChild(typeTwoImage);
+        typeTwoImage.src = carta.links.linkTipo2;
+        typeTwoImage.alt = carta.tipos.secundario;
+    }
+
+    pokeImage.src = carta.links.linkImg;
+    pokeImage.alt = carta.nome;
     hp.innerHTML = carta.atributos.hp;
     atk.innerHTML = carta.atributos.ataque;
     def.innerHTML = carta.atributos.defesa;

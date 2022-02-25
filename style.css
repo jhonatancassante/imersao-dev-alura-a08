@@ -31,6 +31,7 @@
     --mensage-bg-lose: rgba(255, 0, 0, 0.8);
     --mensage-bg-draw: rgba(150, 150, 0, 0.8);
     --pb-dimensions: 250px;
+    --pb-card-dimen: 120px;
 }
 
 body {
@@ -193,11 +194,75 @@ body {
     width: 100%;
     height: 100%;
     padding: 10px;
-    border: 2px solid rgba(3, 2, 2, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .wrapper .card .content.fliped {
-    background: var(--card-back-color);
+    background-color: var(--card-back-color);
+}
+
+.card .content .backCard {
+    display: none;
+}
+
+.card .content.fliped .backCard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f8f8f8;
+    background-image: url("./img/backCard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content.fliped .backCard .pokeballCard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--pb-card-dimen);
+    min-height: var(--pb-card-dimen);
+    width: var(--pb-card-dimen);
+    height: var(--pb-card-dimen);
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #000;
+    z-index: 1000;
+    opacity: 0.7;
+    box-shadow: 0px 0px 10px #f8f8f8;
+}
+
+.content.fliped .backCard .pokeballCard::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(50% - 2px);
+    background: #f00;
+    border-top-left-radius: calc(var(--pb-card-dimen) / 2);
+    border-top-right-radius: calc(var(--pb-card-dimen) / 2);
+    border-bottom: 3px solid #000;
+}
+
+.content.fliped .backCard .pokeballCard-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--pb-card-dimen) / 3);
+    height: calc(var(--pb-card-dimen) / 3);
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #000;
+    z-index: 1001;
 }
 
 .card .content .cardHeader {
@@ -235,36 +300,72 @@ body {
     display: none;
 }
 
-.card .content .cardImg {
+.card .content .cardCenter {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 180px;
+}
+
+.card .content.fliped .cardCenter {
+    display: none;
+}
+
+.content .cardCenter .cardTypes {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 7px;
+    top: 7px;
+    background-color: transparent;
+    min-width: 10px;
+    min-height: 10px;
+    z-index: 100;
+}
+
+.content .cardCenter .cardTypes img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(0px 0px 5px #000);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+
+.card .content .cardCenter .cardImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     background-image: url("photographer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0px 0px 15px rgba(0,0,0,0.5),
-    0px 0px 5px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5),
+        0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-.card .content .cardImg:hover {
-    box-shadow: inset 0px 0px 15px rgba(255,255,255,0.5),
-    0px 0px 5px rgba(0,0,0,0.5);
+.card .content .cardCenter .cardImg:hover {
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5),
+        0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-.card .content.fliped .cardImg {
-    display: none;
-}
-
-.cardImg img {
+.cardCenter .cardImg img {
     width: 140px;
     height: 140px;
     margin: 10px;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.7)) drop-shadow(5px 5px 5px rgba(0,0,0,0.5)) drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .card .content .cardAtribs {
@@ -483,7 +584,7 @@ body {
     position: relative;
     border-radius: 10px;
     text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
-    border: 1px solid rgba(255,255,255,0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .center {
