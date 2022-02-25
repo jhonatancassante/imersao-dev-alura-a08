@@ -331,6 +331,9 @@ body {
     margin-top: 10px;
     font-size: 20px;
     font-weight: 800;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
 }
 
 .content .cardCenter .cardTypes .multiplier.buff {
