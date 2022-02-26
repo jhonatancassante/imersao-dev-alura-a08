@@ -461,6 +461,7 @@ body {
         0px 0px 2px #f8f8f8;
 }
 
+.content .cardAtribs .atrib div.actived,
 .content .cardAtribs .atrib input:checked~div {
     border: 1px solid rgba(0, 255, 255, 0.5);
     font-weight: 600;
@@ -606,7 +607,7 @@ body {
     background: var(--card-border-color);
     border: 1px solid rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1),
         10px 10px 20px rgba(0, 0, 0, 0.5);
 }
