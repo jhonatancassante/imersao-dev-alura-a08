@@ -122,7 +122,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/004.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 5,
@@ -142,7 +143,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/005.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 6,
@@ -246,7 +248,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/007.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 8,
@@ -266,7 +269,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/008.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 9,
@@ -286,7 +290,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/009.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 9,
@@ -306,7 +311,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/009GMAX.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 9,
@@ -326,7 +332,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/009M.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 10,
@@ -346,7 +353,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Bug-Types.jpg",
 			linkImg: "./img/pokemons/010.png",
-			linkTipo1: "./img/types/Bug.png"
+			linkTipo1: "./img/types/Bug.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 11,
@@ -366,7 +374,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Bug-Types.jpg",
 			linkImg: "./img/pokemons/011.png",
-			linkTipo1: "./img/types/Bug.png"
+			linkTipo1: "./img/types/Bug.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 12,
@@ -596,7 +605,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/019.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 19,
@@ -637,7 +647,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/020.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 20,
@@ -720,7 +731,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/023.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 24,
@@ -740,7 +752,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/024.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 25,
@@ -760,7 +773,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/025.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 25,
@@ -780,7 +794,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/025GMAX.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 25,
@@ -800,7 +815,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/025LG.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 26,
@@ -820,7 +836,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/026.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 26,
@@ -861,7 +878,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ground-Types.jpg",
 			linkImg: "./img/pokemons/027.png",
-			linkTipo1: "./img/types/Ground.png"
+			linkTipo1: "./img/types/Ground.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 27,
@@ -902,7 +920,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ground-Types.jpg",
 			linkImg: "./img/pokemons/028.png",
-			linkTipo1: "./img/types/Ground.png"
+			linkTipo1: "./img/types/Ground.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 28,
@@ -943,7 +962,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/029.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 30,
@@ -963,7 +983,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/030.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 31,
@@ -1004,7 +1025,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/032.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 33,
@@ -1024,7 +1046,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/033.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 34,
@@ -1065,7 +1088,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fairy-Types.jpg",
 			linkImg: "./img/pokemons/035.png",
-			linkTipo1: "./img/types/Fairy.png"
+			linkTipo1: "./img/types/Fairy.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 36,
@@ -1085,7 +1109,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fairy-Types.jpg",
 			linkImg: "./img/pokemons/036.png",
-			linkTipo1: "./img/types/Fairy.png"
+			linkTipo1: "./img/types/Fairy.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 37,
@@ -1105,7 +1130,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/037.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 37,
@@ -1125,7 +1151,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ice-Types.jpg",
 			linkImg: "./img/pokemons/037A.png",
-			linkTipo1: "./img/types/Ice.png"
+			linkTipo1: "./img/types/Ice.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 38,
@@ -1145,7 +1172,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/038.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 38,
@@ -1417,7 +1445,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ground-Types.jpg",
 			linkImg: "./img/pokemons/050.png",
-			linkTipo1: "./img/types/Ground.png"
+			linkTipo1: "./img/types/Ground.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 50,
@@ -1458,7 +1487,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ground-Types.jpg",
 			linkImg: "./img/pokemons/051.png",
-			linkTipo1: "./img/types/Ground.png"
+			linkTipo1: "./img/types/Ground.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 51,
@@ -1499,7 +1529,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/052.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 52,
@@ -1519,7 +1550,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/052MAX.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 52,
@@ -1539,7 +1571,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Dark-Types.jpg",
 			linkImg: "./img/pokemons/052A.png",
-			linkTipo1: "./img/types/Dark.png"
+			linkTipo1: "./img/types/Dark.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 52,
@@ -1559,7 +1592,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Steel-Types.jpg",
 			linkImg: "./img/pokemons/052G.png",
-			linkTipo1: "./img/types/Steel.png"
+			linkTipo1: "./img/types/Steel.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 53,
@@ -1579,7 +1613,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/053.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 53,
@@ -1599,7 +1634,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Dark-Types.jpg",
 			linkImg: "./img/pokemons/053A.png",
-			linkTipo1: "./img/types/Dark.png"
+			linkTipo1: "./img/types/Dark.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 54,
@@ -1619,7 +1655,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/054.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 55,
@@ -1639,7 +1676,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/055.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 56,
@@ -1659,7 +1697,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/056.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 57,
@@ -1679,7 +1718,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/057.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 58,
@@ -1699,7 +1739,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/058.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 58,
@@ -1740,7 +1781,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/059.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 59,
@@ -1781,7 +1823,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/060.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 61,
@@ -1801,7 +1844,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/061.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 62,
@@ -1842,7 +1886,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/063.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 64,
@@ -1862,7 +1907,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/064.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 65,
@@ -1882,7 +1928,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/065.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 65,
@@ -1902,7 +1949,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/065M.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 66,
@@ -1922,7 +1970,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/066.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 67,
@@ -1942,7 +1991,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/067.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 68,
@@ -1962,7 +2012,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/068.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 68,
@@ -1982,7 +2033,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/068GMAX.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 69,
@@ -2233,7 +2285,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/077.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 77,
@@ -2253,7 +2306,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/077G.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 78,
@@ -2273,7 +2327,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/078.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 78,
@@ -2335,7 +2390,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/079G.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 80,
@@ -2481,7 +2537,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/083G.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 84,
@@ -2543,7 +2600,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/086.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 87,
@@ -2584,7 +2642,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/088.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 88,
@@ -2625,7 +2684,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/089.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 89,
@@ -2666,7 +2726,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/090.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 91,
@@ -2833,7 +2894,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/096.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 97,
@@ -2853,7 +2915,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/097.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 98,
@@ -2873,7 +2936,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/098.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 99,
@@ -2893,7 +2957,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/099.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 99,
@@ -2913,7 +2978,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/099GMax.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 100,
@@ -2933,7 +2999,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/100.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 100,
@@ -2954,7 +3021,7 @@ function pokemons() {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/100H.png",
 			linkTipo1: "./img/types/Electric.png",
-			linkTipo1: "./img/types/Grass.png"
+			linkTipo2: "./img/types/Grass.png"
 		}
 	}, {
 		number: 101,
@@ -2974,11 +3041,12 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/101.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 101,
-		nome: "GMax Electrode",
+		nome: "Hisuian Electrode",
 		tipos: {
 			primario: "Electric",
 			secundario: "Grass"
@@ -2995,7 +3063,7 @@ function pokemons() {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/101H.png",
 			linkTipo1: "./img/types/Electric.png",
-			linkTipo1: "./img/types/Grass.png"
+			linkTipo2: "./img/types/Grass.png"
 		}
 	}, {
 		number: 102,
@@ -3078,7 +3146,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ground-Types.jpg",
 			linkImg: "./img/pokemons/104.png",
-			linkTipo1: "./img/types/Ground.png"
+			linkTipo1: "./img/types/Ground.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 105,
@@ -3098,7 +3167,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Ground-Types.jpg",
 			linkImg: "./img/pokemons/105.png",
-			linkTipo1: "./img/types/Ground.png"
+			linkTipo1: "./img/types/Ground.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 105,
@@ -3139,7 +3209,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/106.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 107,
@@ -3159,7 +3230,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/107.png",
-			linkTipo1: "./img/types/Fighting.png"
+			linkTipo1: "./img/types/Fighting.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 108,
@@ -3179,7 +3251,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/108.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 109,
@@ -3199,7 +3272,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/109.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 110,
@@ -3219,7 +3293,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Poison-Types.jpg",
 			linkImg: "./img/pokemons/110.png",
-			linkTipo1: "./img/types/Poison.png"
+			linkTipo1: "./img/types/Poison.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 110,
@@ -3302,7 +3377,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/113.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 114,
@@ -3322,7 +3398,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Grass-Types.jpg",
 			linkImg: "./img/pokemons/114.png",
-			linkTipo1: "./img/types/Grass.png"
+			linkTipo1: "./img/types/Grass.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 115,
@@ -3342,7 +3419,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/115.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 115,
@@ -3362,7 +3440,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/115M.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 116,
@@ -3382,7 +3461,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/116.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 117,
@@ -3402,7 +3482,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/117.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 118,
@@ -3422,7 +3503,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/118.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 119,
@@ -3442,7 +3524,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/119.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 120,
@@ -3462,7 +3545,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/120.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 121,
@@ -3587,7 +3671,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/125.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 126,
@@ -3607,7 +3692,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/126.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 127,
@@ -3627,7 +3713,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Bug-Types.jpg",
 			linkImg: "./img/pokemons/127.png",
-			linkTipo1: "./img/types/Bug.png"
+			linkTipo1: "./img/types/Bug.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 127,
@@ -3668,7 +3755,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/128.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 129,
@@ -3688,7 +3776,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/129.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 130,
@@ -3792,7 +3881,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/132.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 133,
@@ -3812,7 +3902,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/133.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 133,
@@ -3832,7 +3923,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/133GMAX.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 133,
@@ -3852,7 +3944,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/133LG.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 134,
@@ -3872,7 +3965,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Water-Types.jpg",
 			linkImg: "./img/pokemons/134.png",
-			linkTipo1: "./img/types/Water.png"
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 135,
@@ -3892,7 +3986,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/135.png",
-			linkTipo1: "./img/types/Electric.png"
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 136,
@@ -3912,7 +4007,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/136.png",
-			linkTipo1: "./img/types/Fire.png"
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 137,
@@ -3932,7 +4028,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/137.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 138,
@@ -4078,7 +4175,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/143.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 143,
@@ -4098,7 +4196,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/143GMAX.png",
-			linkTipo1: "./img/types/Normal.png"
+			linkTipo1: "./img/types/Normal.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 144,
@@ -4244,7 +4343,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Dragon-Types.jpg",
 			linkImg: "./img/pokemons/147.png",
-			linkTipo1: "./img/types/Dragon.png"
+			linkTipo1: "./img/types/Dragon.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 148,
@@ -4264,7 +4364,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Dragon-Types.jpg",
 			linkImg: "./img/pokemons/148.png",
-			linkTipo1: "./img/types/Dragon.png"
+			linkTipo1: "./img/types/Dragon.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 149,
@@ -4305,7 +4406,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/150.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 150,
@@ -4346,7 +4448,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/150M-Y.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}, {
 		number: 151,
@@ -4366,7 +4469,8 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Psychic-Types.jpg",
 			linkImg: "./img/pokemons/151.png",
-			linkTipo1: "./img/types/Psychic.png"
+			linkTipo1: "./img/types/Psychic.png",
+			linkTipo2: ""
 		}
 	}
 	];
