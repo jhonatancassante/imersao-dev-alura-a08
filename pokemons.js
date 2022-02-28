@@ -64,6 +64,27 @@ function pokemons() {
 		}
 	}, {
 		number: 3,
+		nome: "GMax Venusaur",
+		tipos: {
+			primario: "Grass",
+			secundario: "Poison"
+		},
+		atributos: {
+			hp: 80,
+			ataque: 82,
+			defesa: 83,
+			spAtaque: 100,
+			spDefesa: 100,
+			speed: 80
+		},
+		links: {
+			linkBg: "./img/bg-types/Grass-Types.jpg",
+			linkImg: "./img/pokemons/003GMAX.png",
+			linkTipo1: "./img/types/Grass.png",
+			linkTipo2: "./img/types/Poison.png"
+		}
+	}, {
+		number: 3,
 		nome: "Mega Venusaur",
 		tipos: {
 			primario: "Grass",
@@ -141,6 +162,27 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/006.png",
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: "./img/types/Flying.png"
+		}
+	}, {
+		number: 6,
+		nome: "GMax Charizard",
+		tipos: {
+			primario: "Fire",
+			secundario: "Flying"
+		},
+		atributos: {
+			hp: 78,
+			ataque: 84,
+			defesa: 78,
+			spAtaque: 109,
+			spDefesa: 85,
+			speed: 100
+		},
+		links: {
+			linkBg: "./img/bg-types/Fire-Types.jpg",
+			linkImg: "./img/pokemons/006GMAX.png",
 			linkTipo1: "./img/types/Fire.png",
 			linkTipo2: "./img/types/Flying.png"
 		}
@@ -248,6 +290,26 @@ function pokemons() {
 		}
 	}, {
 		number: 9,
+		nome: "GMax Blastoise",
+		tipos: {
+			primario: "Water",
+			secundario: ""
+		},
+		atributos: {
+			hp: 79,
+			ataque: 83,
+			defesa: 100,
+			spAtaque: 85,
+			spDefesa: 105,
+			speed: 78
+		},
+		links: {
+			linkBg: "./img/bg-types/Water-Types.jpg",
+			linkImg: "./img/pokemons/009GMAX.png",
+			linkTipo1: "./img/types/Water.png"
+		}
+	}, {
+		number: 9,
 		nome: "Mega Blastoise",
 		tipos: {
 			primario: "Water",
@@ -324,6 +386,27 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Bug-Types.jpg",
 			linkImg: "./img/pokemons/012.png",
+			linkTipo1: "./img/types/Bug.png",
+			linkTipo2: "./img/types/Flying.png"
+		}
+	}, {
+		number: 12,
+		nome: "GMax Butterfree",
+		tipos: {
+			primario: "Bug",
+			secundario: "Flying"
+		},
+		atributos: {
+			hp: 60,
+			ataque: 45,
+			defesa: 50,
+			spAtaque: 90,
+			spDefesa: 80,
+			speed: 70
+		},
+		links: {
+			linkBg: "./img/bg-types/Bug-Types.jpg",
+			linkImg: "./img/pokemons/012GMAX.png",
 			linkTipo1: "./img/types/Bug.png",
 			linkTipo2: "./img/types/Flying.png"
 		}
@@ -677,6 +760,26 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/025.png",
+			linkTipo1: "./img/types/Electric.png"
+		}
+	}, {
+		number: 25,
+		nome: "GMax Pikachu",
+		tipos: {
+			primario: "Electric",
+			secundario: ""
+		},
+		atributos: {
+			hp: 35,
+			ataque: 55,
+			defesa: 40,
+			spAtaque: 50,
+			spDefesa: 50,
+			speed: 90
+		},
+		links: {
+			linkBg: "./img/bg-types/Electric-Types.jpg",
+			linkImg: "./img/pokemons/025GMAX.png",
 			linkTipo1: "./img/types/Electric.png"
 		}
 	}, {
@@ -1400,6 +1503,26 @@ function pokemons() {
 		}
 	}, {
 		number: 52,
+		nome: "GMax Meowth",
+		tipos: {
+			primario: "Normal",
+			secundario: ""
+		},
+		atributos: {
+			hp: 40,
+			ataque: 45,
+			defesa: 35,
+			spAtaque: 40,
+			spDefesa: 40,
+			speed: 90
+		},
+		links: {
+			linkBg: "./img/bg-types/Normal-Types.jpg",
+			linkImg: "./img/pokemons/052MAX.png",
+			linkTipo1: "./img/types/Normal.png"
+		}
+	}, {
+		number: 52,
 		nome: "Alolan Meowth",
 		tipos: {
 			primario: "Dark",
@@ -1579,6 +1702,27 @@ function pokemons() {
 			linkTipo1: "./img/types/Fire.png"
 		}
 	}, {
+		number: 58,
+		nome: "Hisuian Growlithe",
+		tipos: {
+			primario: "Fire",
+			secundario: "Rock"
+		},
+		atributos: {
+			hp: 60,
+			ataque: 75,
+			defesa: 45,
+			spAtaque: 65,
+			spDefesa: 50,
+			speed: 55
+		},
+		links: {
+			linkBg: "./img/bg-types/Fire-Types.jpg",
+			linkImg: "./img/pokemons/058H.png",
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: "./img/types/Rock.png"
+		}
+	}, {
 		number: 59,
 		nome: "Arcanine",
 		tipos: {
@@ -1597,6 +1741,27 @@ function pokemons() {
 			linkBg: "./img/bg-types/Fire-Types.jpg",
 			linkImg: "./img/pokemons/059.png",
 			linkTipo1: "./img/types/Fire.png"
+		}
+	}, {
+		number: 59,
+		nome: "Hisuian Arcanine",
+		tipos: {
+			primario: "Fire",
+			secundario: "Rock"
+		},
+		atributos: {
+			hp: 95,
+			ataque: 115,
+			defesa: 80,
+			spAtaque: 95,
+			spDefesa: 80,
+			speed: 90
+		},
+		links: {
+			linkBg: "./img/bg-types/Fire-Types.jpg",
+			linkImg: "./img/pokemons/059H.png",
+			linkTipo1: "./img/types/Fire.png",
+			linkTipo2: "./img/types/Rock.png"
 		}
 	}, {
 		number: 60,
@@ -1797,6 +1962,26 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Fighting-Types.jpg",
 			linkImg: "./img/pokemons/068.png",
+			linkTipo1: "./img/types/Fighting.png"
+		}
+	}, {
+		number: 68,
+		nome: "GMax Machamp",
+		tipos: {
+			primario: "Fighting",
+			secundario: ""
+		},
+		atributos: {
+			hp: 90,
+			ataque: 130,
+			defesa: 80,
+			spAtaque: 65,
+			spDefesa: 85,
+			speed: 55
+		},
+		links: {
+			linkBg: "./img/bg-types/Fighting-Types.jpg",
+			linkImg: "./img/pokemons/068GMAX.png",
 			linkTipo1: "./img/types/Fighting.png"
 		}
 	}, {
@@ -2569,6 +2754,27 @@ function pokemons() {
 		}
 	}, {
 		number: 94,
+		nome: "GMax Gengar",
+		tipos: {
+			primario: "Ghost",
+			secundario: "Poison"
+		},
+		atributos: {
+			hp: 60,
+			ataque: 65,
+			defesa: 60,
+			spAtaque: 130,
+			spDefesa: 75,
+			speed: 110
+		},
+		links: {
+			linkBg: "./img/bg-types/Ghost-Types.jpg",
+			linkImg: "./img/pokemons/094GMAX.png",
+			linkTipo1: "./img/types/Ghost.png",
+			linkTipo2: "./img/types/Poison.png"
+		}
+	}, {
+		number: 94,
 		nome: "Mega Gengar",
 		tipos: {
 			primario: "Ghost",
@@ -2690,6 +2896,26 @@ function pokemons() {
 			linkTipo1: "./img/types/Water.png"
 		}
 	}, {
+		number: 99,
+		nome: "GMax Kingler",
+		tipos: {
+			primario: "Water",
+			secundario: ""
+		},
+		atributos: {
+			hp: 55,
+			ataque: 130,
+			defesa: 115,
+			spAtaque: 50,
+			spDefesa: 50,
+			speed: 75
+		},
+		links: {
+			linkBg: "./img/bg-types/Water-Types.jpg",
+			linkImg: "./img/pokemons/099GMax.png",
+			linkTipo1: "./img/types/Water.png"
+		}
+	}, {
 		number: 100,
 		nome: "Voltorb",
 		tipos: {
@@ -2710,6 +2936,27 @@ function pokemons() {
 			linkTipo1: "./img/types/Electric.png"
 		}
 	}, {
+		number: 100,
+		nome: "Hisuian Voltorb",
+		tipos: {
+			primario: "Electric",
+			secundario: "Grass"
+		},
+		atributos: {
+			hp: 40,
+			ataque: 30,
+			defesa: 50,
+			spAtaque: 55,
+			spDefesa: 55,
+			speed: 100
+		},
+		links: {
+			linkBg: "./img/bg-types/Electric-Types.jpg",
+			linkImg: "./img/pokemons/100H.png",
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo1: "./img/types/Grass.png"
+		}
+	}, {
 		number: 101,
 		nome: "Electrode",
 		tipos: {
@@ -2728,6 +2975,27 @@ function pokemons() {
 			linkBg: "./img/bg-types/Electric-Types.jpg",
 			linkImg: "./img/pokemons/101.png",
 			linkTipo1: "./img/types/Electric.png"
+		}
+	}, {
+		number: 101,
+		nome: "GMax Electrode",
+		tipos: {
+			primario: "Electric",
+			secundario: "Grass"
+		},
+		atributos: {
+			hp: 60,
+			ataque: 50,
+			defesa: 70,
+			spAtaque: 80,
+			spDefesa: 80,
+			speed: 150
+		},
+		links: {
+			linkBg: "./img/bg-types/Electric-Types.jpg",
+			linkImg: "./img/pokemons/101H.png",
+			linkTipo1: "./img/types/Electric.png",
+			linkTipo1: "./img/types/Grass.png"
 		}
 	}, {
 		number: 102,
@@ -3486,6 +3754,27 @@ function pokemons() {
 			linkTipo2: "./img/types/Ice.png"
 		}
 	}, {
+		number: 131,
+		nome: "GMax Lapras",
+		tipos: {
+			primario: "Water",
+			secundario: "Ice"
+		},
+		atributos: {
+			hp: 130,
+			ataque: 85,
+			defesa: 80,
+			spAtaque: 85,
+			spDefesa: 95,
+			speed: 60
+		},
+		links: {
+			linkBg: "./img/bg-types/Water-Types.jpg",
+			linkImg: "./img/pokemons/131GMAX.png",
+			linkTipo1: "./img/types/Water.png",
+			linkTipo2: "./img/types/Ice.png"
+		}
+	}, {
 		number: 132,
 		nome: "Ditto",
 		tipos: {
@@ -3523,6 +3812,26 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/133.png",
+			linkTipo1: "./img/types/Normal.png"
+		}
+	}, {
+		number: 133,
+		nome: "GMax Eevee",
+		tipos: {
+			primario: "Normal",
+			secundario: ""
+		},
+		atributos: {
+			hp: 55,
+			ataque: 55,
+			defesa: 50,
+			spAtaque: 45,
+			spDefesa: 65,
+			speed: 55
+		},
+		links: {
+			linkBg: "./img/bg-types/Normal-Types.jpg",
+			linkImg: "./img/pokemons/133GMAX.png",
 			linkTipo1: "./img/types/Normal.png"
 		}
 	}, {
@@ -3769,6 +4078,26 @@ function pokemons() {
 		links: {
 			linkBg: "./img/bg-types/Normal-Types.jpg",
 			linkImg: "./img/pokemons/143.png",
+			linkTipo1: "./img/types/Normal.png"
+		}
+	}, {
+		number: 143,
+		nome: "GMax Snorlax",
+		tipos: {
+			primario: "Normal",
+			secundario: ""
+		},
+		atributos: {
+			hp: 160,
+			ataque: 110,
+			defesa: 65,
+			spAtaque: 65,
+			spDefesa: 110,
+			speed: 30
+		},
+		links: {
+			linkBg: "./img/bg-types/Normal-Types.jpg",
+			linkImg: "./img/pokemons/143GMAX.png",
 			linkTipo1: "./img/types/Normal.png"
 		}
 	}, {
