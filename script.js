@@ -2,7 +2,7 @@ let btnSortear = document.querySelector(".btnSortear");
 let btnJogar = document.querySelector(".btnJogar");
 let contentP = document.querySelector(".player .content");
 let contentM = document.querySelector(".machine .content");
-let choice = document.querySelector(".choice");
+let subtitle = document.querySelector(".subtitle");
 
 var deck = pokemons();
 var cardPlayer = 0;
@@ -19,8 +19,8 @@ function tirarCarta() {
     if (!btnSortear.classList.contains("inactive")) {
         newGame = 1;
         gameStatus = -1;
-        choice.innerHTML = '';
-        choice.innerHTML = 'Clique em um atributo e tipo para escolher qual jogar...';
+        subtitle.innerHTML = '';
+        subtitle.innerHTML = 'Clique em um atributo e tipo para escolher qual jogar...';
         cleanSelectionAtrib();
 
         if (deck.length > 1) {
@@ -60,6 +60,21 @@ function clearBonus() {
     }
 }
 
+function cleanSelectionAtrib() {
+    var atributo = document.getElementsByName("atributos");
+    var content = document.querySelector(".machine .content");
+
+    content.style.backgroundImage = "none";
+
+    for (var item of atributo) {
+        if (item.checked) {
+            item.checked = false;
+        }
+    }
+
+    return;
+}
+
 function sortearCarta() {
     var indice = parseInt(Math.random() * deck.length);
     var carta = 0;
@@ -71,7 +86,7 @@ function sortearCarta() {
 }
 
 function pokeballSpin() {
-    var pokeball = document.querySelector(".pokeball");
+    var pokeball = document.querySelector(".pokeball-bg");
 
     pokeball.classList.toggle("spinPokeball");
 
@@ -278,9 +293,9 @@ function jogar() {
         exibirCarta(cardMachine, ".machine");
         btnJogar.classList.add("inactive");
         typeSelected = "";
-        choice.innerHTML = '';
+        subtitle.innerHTML = '';
         newGame = 0;
-        choice.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
+        subtitle.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
     }
 
     return;
@@ -317,21 +332,6 @@ function selectMachineAtrib(selectMachine) {
     spdef.classList.remove("actived");
     speed.classList.remove("actived");
     selectMachine.classList.add("actived");
-
-    return;
-}
-
-function cleanSelectionAtrib() {
-    var atributo = document.getElementsByName("atributos");
-    var content = document.querySelector(".machine .content");
-
-    content.style.backgroundImage = "none";
-
-    for (var item of atributo) {
-        if (item.checked) {
-            item.checked = false;
-        }
-    }
 
     return;
 }

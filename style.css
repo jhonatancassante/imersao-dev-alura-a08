@@ -14,22 +14,34 @@
 }
 
 :root {
-    --background-color: #10131c;
-    --font-color1: #f8f8f8;
-    --font-color2: rgb(3, 3, 3);
-    --card-border-color: radial-gradient(transparent, rgba(255, 255, 255, 0.2));
-    --card-content-color: #00ff00;
-    --card-back-color: #000;
-    --card-header-color: #ff0066;
-    --card-img-color: #0000ff;
-    --card-atrib-color: #6600ff;
-    --actived-atrib-color: red;
-    --mensage-bg-color: rgba(102, 0, 255, 0.8);
-    --card-height: 360px;
-    --card-width: 280px;
-    --mensage-bg-win: rgba(0, 150, 0, 0.8);
-    --mensage-bg-lose: rgba(255, 0, 0, 0.8);
-    --mensage-bg-draw: rgba(150, 150, 0, 0.8);
+    --bg-clr1: radial-gradient(circle, rgba(82, 174, 215, 1) 0%, rgba(19, 76, 145, 1) 100%);
+    --card-border-clr: radial-gradient(transparent, rgba(255, 255, 255, 0.2));
+    --card-header-clr: linear-gradient(#FECA00 38%, #D07800 74%, #FF9300 91%);;
+
+    --font-clr1: #f8f8f8;
+    --card-back-clr: #000;
+    --buff-clr: #0f0;
+    --debuff-clr: #f0f;
+    --active-clr: #0ff;
+    --bg-clr2: #f8f8f8;
+    --btn-hover: #d8d8d8;
+    
+    --font-clr2: rgba(3, 3, 3, 1);
+    --buff-border: rgba(0, 255, 0, 0.5);
+    --debuff-border: rgba(255, 0, 255, 0.5);
+    --active-border: rgba(0, 255, 255, 0.5);
+    --msg-bg-clr: rgba(102, 0, 255, 0.8);
+    --msg-bg-win: rgba(0, 150, 0, 0.8);
+    --msg-bg-lose: rgba(255, 0, 0, 0.8);
+    --msg-bg-draw: rgba(150, 150, 0, 0.8);
+    /* --card-content-clr: #00ff00; */
+    /* --card-header-clr: #ff0066; */
+    /* --card-img-clr: #0000ff; */
+    /* --card-atrib-clr: #6600ff; */
+    /* --actived-atrib-clr: red; */
+    /* --card-height: 360px; */
+    /* --card-width: 280px; */
+
     --pb-dimensions: 250px;
     --pb-card-dimen: 120px;
 }
@@ -39,10 +51,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: radial-gradient(circle, rgba(82, 174, 215, 1) 0%, rgba(19, 76, 145, 1) 100%);
+    background: var(--bg-clr1);
 }
 
-.pokeball {
+.pokeball-bg {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -57,7 +69,7 @@ body {
     z-index: 100;
 }
 
-.pokeball::before {
+.pokeball-bg::before {
     content: "";
     position: absolute;
     left: 0;
@@ -70,12 +82,12 @@ body {
     border-bottom: 5px solid #000;
 }
 
-.pokeball.spinPokeball {
+.pokeball-bg.spinPokeball {
     transform: rotate(360deg);
     transition: all 1s ease;
 }
 
-.pokeball-center {
+.pokeball-bg-center {
     position: relative;
     display: flex;
     justify-content: center;
@@ -86,21 +98,6 @@ body {
     border-radius: 50%;
     border: 5px solid #000;
     z-index: 101;
-}
-
-.page-logo {
-    width: 120px;
-    height: 24px;
-    position: fixed;
-    top: 10px;
-    right: 70px;
-}
-
-.alura-logo {
-    width: 40px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
 }
 
 .container {
@@ -126,14 +123,14 @@ body {
     margin: 10px 20px;
     font-size: 36px;
     font-weight: 600;
-    color: var(--font-color1);
+    color: var(--font-clr1);
     font-family: 'Press Start 2P', cursive;
 }
 
-.container .choice {
+.container .subtitle {
     font-size: 18px;
     font-weight: 500;
-    color: var(--font-color1);
+    color: var(--font-clr1);
     margin: 10px 20px;
     height: 18px;
 }
@@ -153,12 +150,12 @@ body {
     width: 260px;
     height: 370px;
     border-radius: 10px;
-    background: var(--card-border-color);
+    background: var(--card-border-clr);
     border: 1px solid rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1),
-        10px 10px 20px rgba(0, 0, 0, 0.5);
+    10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .container .wrapper .player {
@@ -171,15 +168,15 @@ body {
 
 .container .wrapper .card.foil {
     background-image: linear-gradient(var(--rotate), #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff07ff);
-    animation: spin 4s linear infinite;
+    animation: spinner-border 4s linear infinite;
     border: none;
 }
 
-@keyframes spin {
+@keyframes spinner-border {
     0% {
         --rotate: 0deg;
     }
-
+    
     100% {
         --rotate: 360deg;
     }
@@ -199,7 +196,7 @@ body {
 }
 
 .wrapper .card .content.fliped {
-    background-color: var(--card-back-color);
+    background-color: var(--card-back-clr);
 }
 
 .card .content .backCard {
@@ -216,7 +213,6 @@ body {
     height: 100%;
     font-size: 24px;
     font-weight: 700;
-    color: #f8f8f8;
     background-image: url("./img/backCard.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -267,7 +263,7 @@ body {
 }
 
 .card .content .cardHeader {
-
+    
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -278,8 +274,8 @@ body {
     font-weight: 600;
     width: 100%;
     border-radius: 30px;
-    color: rgba(0, 0, 0, 1);
-    background: linear-gradient(#FECA00 38%, #D07800 74%, #FF9300 91%);
+    color: var(--font-clr2);
+    background: var(--card-header-clr);
     box-shadow: 2px 2px 5px #000;
 }
 
@@ -338,13 +334,13 @@ body {
 }
 
 .content .cardCenter .cardTypes .multiplier.buff {
-    color: #0f0;
-    text-shadow: 0px 0px 5px #0f0;
+    color: var(--buff-clr);
+    text-shadow: 0px 0px 5px var(--buff-clr);
 }
 
 .content .cardCenter .cardTypes .multiplier.debuff {
-    color: #f0f;
-    text-shadow: 0px 0px 5px #f0f;
+    color: var(--debuff-clr);
+    text-shadow: 0px 0px 5px var(--debuff-clr);
 }
 
 .content .cardCenter .cardTypes img {
@@ -362,8 +358,8 @@ body {
 }
 
 .content .cardCenter .cardTypes .typeActive img {
-    filter: drop-shadow(0px 0px 5px #0ff);
-    border: 1px solid rgba(0, 255, 255, 0.5);
+    filter: drop-shadow(0px 0px 5px var(--active-clr));
+    border: 1px solid var(--active-border);
 }
 
 .card .content .cardCenter .cardImg {
@@ -374,17 +370,16 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background-image: url("photographer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5),
-        0px 0px 5px rgba(0, 0, 0, 0.5);
+    0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card .content .cardCenter .cardImg:hover {
     box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5),
-        0px 0px 5px rgba(0, 0, 0, 0.5);
+    0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cardCenter .cardImg img {
@@ -408,7 +403,7 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-bottom: 20px;
-    color: var(--font-color2);
+    color: var(--font-clr2);
     font-size: 14px;
     font-weight: 600;
 }
@@ -421,7 +416,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
-
+    
 }
 
 .machine .cardAtribs .atrib {
@@ -437,18 +432,18 @@ body {
     border: 2px solid #000;
     border-radius: 5px;
     padding: 2px;
-    background: #f8f8f8;
+    background: var(--bg-clr2);
     box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.25),
-        inset 2px 2px 5px rgba(0, 0, 0, 0.15),
-        -2px -2px 5px rgba(0, 0, 0, 0.25),
-        2px 2px 5px rgba(0, 0, 0, 0.15);
+    inset 2px 2px 5px rgba(0, 0, 0, 0.15),
+    -2px -2px 5px rgba(0, 0, 0, 0.25),
+    2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .content .cardAtribs .atrib div:hover {
     box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.25),
-        inset 2px 2px 5px rgba(255, 255, 255, 0.15),
-        -2px -2px 5px rgba(255, 255, 255, 0.25),
-        2px 2px 5px rgba(255, 255, 255, 0.15);
+    inset 2px 2px 5px rgba(255, 255, 255, 0.15),
+    -2px -2px 5px rgba(255, 255, 255, 0.25),
+    2px 2px 5px rgba(255, 255, 255, 0.15);
 }
 
 .content .cardAtribs .atrib div.atribName {
@@ -456,32 +451,32 @@ body {
     border: none;
     box-shadow: none;
     text-shadow: 0px 0px 1px #f8f8f8,
-        0px 0px 1px #f8f8f8,
-        0px 0px 2px #f8f8f8,
-        0px 0px 2px #f8f8f8;
+    0px 0px 1px #f8f8f8,
+    0px 0px 2px #f8f8f8,
+    0px 0px 2px #f8f8f8;
 }
 
 .content .cardAtribs .atrib div.actived,
 .content .cardAtribs .atrib input:checked~div {
-    border: 1px solid rgba(0, 255, 255, 0.5);
+    border: 1px solid var(--active-border);
     font-weight: 600;
-    box-shadow: inset 0 0 3px #0ff,
-        inset 0 0 5px #0ff,
-        0px 0px 5px #0ff;
+    box-shadow: inset 0 0 3px var(--active-clr),
+    inset 0 0 5px var(--active-clr),
+    0px 0px 5px var(--active-clr);
 }
 
 .content .cardAtribs .atrib input:checked~div.buff {
-    border: 1px solid rgba(0, 255, 0, 0.5);
-    box-shadow: inset 0 0 3px #0f0,
-        inset 0 0 5px #0f0,
-        0px 0px 5px #0f0;
+    border: 1px solid var(--buff-border);
+    box-shadow: inset 0 0 3px var(--buff-clr),
+    inset 0 0 5px var(--buff-clr),
+    0px 0px 5px var(--buff-clr);
 }
 
 .content .cardAtribs .atrib input:checked~div.debuff {
-    border: 1px solid rgba(255, 0, 255, 0.5);
-    box-shadow: inset 0 0 3px #f0f,
-        inset 0 0 5px #f0f,
-        0px 0px 5px #f0f;
+    border: 1px solid var(--debuff-border);
+    box-shadow: inset 0 0 3px var(--debuff-clr),
+    inset 0 0 5px var(--debuff-clr),
+    0px 0px 5px var(--debuff-clr);
 }
 
 .container .footer {
@@ -511,14 +506,14 @@ body {
     height: 50px;
     padding: 20px;
     margin: 20px;
-    background: #f8f8f8;
-    color: var(--font-color2);
+    background: var(--bg-clr2);
+    color: var(--font-clr2);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.25),
-        -4px -4px 10px rgba(0, 0, 0, 0.5),
-        4px 4px 10px rgba(0, 0, 0, 0.25);
+    inset 4px 4px 10px rgba(0, 0, 0, 0.25),
+    -4px -4px 10px rgba(0, 0, 0, 0.5),
+    4px 4px 10px rgba(0, 0, 0, 0.25);
     user-select: none;
     cursor: pointer;
     border: none;
@@ -528,15 +523,15 @@ body {
 
 .container .footer .btnSortear:hover,
 .container .footer .btnJogar:hover {
-    background-color: #d8d8d8;
+    background-color: var(--btn-hover);
 }
 
 .container .footer .btnSortear:active,
 .container .footer .btnJogar:active {
     box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.25),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
-        -4px -4px 10px rgba(0, 0, 0, 0.25),
-        4px 4px 10px rgba(0, 0, 0, 0.5);
+    inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+    -4px -4px 10px rgba(0, 0, 0, 0.25),
+    4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container .footer .btnSortear.inactive,
@@ -552,7 +547,7 @@ body {
     flex-direction: column;
     font-size: 18px;
     font-weight: 600;
-    color: var(--font-color1);
+    color: var(--font-clr1);
     margin: 10px;
 }
 
@@ -561,7 +556,7 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    background: #f8f8f8;
+    background: var(--bg-clr2);
     height: 50px;
     outline: none;
     border: none;
@@ -570,18 +565,11 @@ body {
     font-weight: 600;
     margin: 10px;
     border-radius: 8px;
-    color: #333;
+    color: var(--font-clr2);
     box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.5),
-        inset 4px 4px 10px rgba(0, 0, 0, 0.25),
-        -4px -4px 10px rgba(0, 0, 0, 0.5),
-        4px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.pokeball-logo {
-    width: 40px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+    inset 4px 4px 10px rgba(0, 0, 0, 0.25),
+    -4px -4px 10px rgba(0, 0, 0, 0.5),
+    4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal-mensagem {
@@ -589,7 +577,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    color: var(--font-color1);
+    color: var(--font-clr1);
     text-align: center;
     position: fixed;
     z-index: 1097;
@@ -604,12 +592,12 @@ body {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    background: var(--card-border-color);
+    background: var(--card-border-clr);
     border: 1px solid rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
     box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1),
-        10px 10px 20px rgba(0, 0, 0, 0.5);
+    10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .modal-mensagem span {
@@ -621,7 +609,7 @@ body {
     height: 100px;
     left: 0;
     background: #000000;
-    color: var(--font-color1);
+    color: var(--font-clr1);
     position: relative;
     border-radius: 10px;
     text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
@@ -635,17 +623,39 @@ body {
 }
 
 .modal-mensagem span.msgWin {
-    background-color: var(--mensage-bg-win);
+    background-color: var(--msg-bg-win);
 }
 
 .modal-mensagem span.msgLose {
-    background-color: var(--mensage-bg-lose);
+    background-color: var(--msg-bg-lose);
 }
 
 .modal-mensagem span.msgDraw {
-    background-color: var(--mensage-bg-draw);
+    background-color: var(--msg-bg-draw);
 }
 
 .modal-mensagem span.msgStandard {
-    background-color: var(--mensage-bg-color);
+    background-color: var(--msg-bg-color);
+}
+
+.page-logo {
+    width: 120px;
+    height: 24px;
+    position: fixed;
+    top: 10px;
+    right: 70px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.pokeball-logo {
+    width: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
