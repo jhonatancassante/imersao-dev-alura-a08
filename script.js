@@ -316,7 +316,7 @@ function playGame() {
         typeSelected = "";
         subtitle.innerHTML = '';
         newGame = 0;
-        subtitle.innerHTML = 'Clique no botão Sortear card para jogar novamente...';
+        subtitle.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
     }
 
     return;
