@@ -12,7 +12,7 @@
 <body>
 
     <div class="pokeball-bg">
-        <div class="pokeball-bg-center">
+        <div class="pb-bg-center">
         </div>
     </div>
 
@@ -27,8 +27,8 @@
             <div class="card player">
                 <div class="content fliped">
                     <div class="backCard">
-                        <div class="pokeballCard">
-                            <div class="pokeballCard-center">
+                        <div class="pokeball-card">
+                            <div class="pb-card-center">
                             </div>
                         </div>
                     </div>
@@ -44,35 +44,35 @@
                         </div>
                         <div class="cardImg"> </div>
                     </div>
-                    <div class="cardAtribs">
-                        <label class="atrib" for="hp">
-                            <div class="atribName">HP:</div>
-                            <input type="radio" id="hp" name="atributos" value="hp" onclick="atribClicked(value)">
+                    <div class="attributeWrapper">
+                        <label class="attribute" for="hp">
+                            <div class="attributeName">HP:</div>
+                            <input type="radio" id="hp" name="attributes" value="hp" onclick="attributeClicked(value)">
                             <div class="hp"></div>
                         </label>
-                        <label class="atrib" for="atk">
-                            <div class="atribName">ATK:</div>
-                            <input type="radio" id="atk" name="atributos" value="ataque" onclick="atribClicked(value)">
-                            <div class="ataque"></div>
+                        <label class="attribute" for="atk">
+                            <div class="attributeName">ATK:</div>
+                            <input type="radio" id="atk" name="attributes" value="attack" onclick="attributeClicked(value)">
+                            <div class="attack"></div>
                         </label>
-                        <label class="atrib" for="def">
-                            <div class="atribName">DEF:</div>
-                            <input type="radio" id="def" name="atributos" value="defesa" onclick="atribClicked(value)">
-                            <div class="defesa"></div>
+                        <label class="attribute" for="def">
+                            <div class="attributeName">DEF:</div>
+                            <input type="radio" id="def" name="attributes" value="defense" onclick="attributeClicked(value)">
+                            <div class="defense"></div>
                         </label>
-                        <label class="atrib" for="spatk">
-                            <div class="atribName">SPATK:</div>
-                            <input type="radio" id="spatk" name="atributos" value="spAtaque" onclick="atribClicked(value)">
-                            <div class="spAtaque"></div>
+                        <label class="attribute" for="spatk">
+                            <div class="attributeName">SPATK:</div>
+                            <input type="radio" id="spatk" name="attributes" value="spAttack" onclick="attributeClicked(value)">
+                            <div class="spAttack"></div>
                         </label>
-                        <label class="atrib" for="spdef">
-                            <div class="atribName">SPDEF:</div>
-                            <input type="radio" id="spdef" name="atributos" value="spDefesa" onclick="atribClicked(value)">
-                            <div class="spDefesa"></div>
+                        <label class="attribute" for="spdef">
+                            <div class="attributeName">SPDEF:</div>
+                            <input type="radio" id="spdef" name="attributes" value="spDefense" onclick="attributeClicked(value)">
+                            <div class="spDefense"></div>
                         </label>
-                        <label class="atrib" for="speed">
-                            <div class="atribName">SPEED:</div>
-                            <input type="radio" id="speed" name="atributos" value="speed" onclick="atribClicked(value)">
+                        <label class="attribute" for="speed">
+                            <div class="attributeName">SPEED:</div>
+                            <input type="radio" id="speed" name="attributes" value="speed" onclick="attributeClicked(value)">
                             <div class="speed"></div>
                         </label>
                     </div>
@@ -81,8 +81,8 @@
             <div class="card machine">
                 <div class="content fliped">
                     <div class="backCard">
-                        <div class="pokeballCard">
-                            <div class="pokeballCard-center">
+                        <div class="pokeball-card">
+                            <div class="pb-card-center">
                             </div>
                         </div>
                     </div>
@@ -97,29 +97,29 @@
                         </div>
                         <div class="cardImg"> </div>
                     </div>
-                    <div class="cardAtribs">
-                        <label class="atrib">
-                            <div class="atribName">HP:</div>
+                    <div class="attributeWrapper">
+                        <label class="attribute">
+                            <div class="attributeName">HP:</div>
                             <div class="hp actived"></div>
                         </label>
-                        <label class="atrib">
-                            <div class="atribName">ATK:</div>
-                            <div class="ataque"></div>
+                        <label class="attribute">
+                            <div class="attributeName">ATK:</div>
+                            <div class="attack"></div>
                         </label>
-                        <label class="atrib">
-                            <div class="atribName">DEF:</div>
-                            <div class="defesa"></div>
+                        <label class="attribute">
+                            <div class="attributeName">DEF:</div>
+                            <div class="defense"></div>
                         </label>
-                        <label class="atrib">
-                            <div class="atribName">SPATK:</div>
-                            <div class="spAtaque"></div>
+                        <label class="attribute">
+                            <div class="attributeName">SPATK:</div>
+                            <div class="spAttack"></div>
                         </label>
-                        <label class="atrib">
-                            <div class="atribName">SPDEF:</div>
-                            <div class="spDefesa"></div>
+                        <label class="attribute">
+                            <div class="attributeName">SPDEF:</div>
+                            <div class="spDefense"></div>
                         </label>
-                        <label class="atrib">
-                            <div class="atribName">SPEED:</div>
+                        <label class="attribute">
+                            <div class="attributeName">SPEED:</div>
                             <div class="speed"></div>
                         </label>
                     </div>
@@ -127,11 +127,11 @@
             </div>
         </div>
 
-        <div class="footer">
+        <div class="controlWrapper">
             <div class="score">Pontos: <input class="playerScore" type="text" value="0" readonly></div>
             <div class="btns">
-                <div class="btnSortear" onclick="tirarCarta()" id="btnSortear">Sortear carta</div>
-                <div class="btnJogar inactive" onclick="jogar()" id="btnJogar">Jogar</div>
+                <div class="btnDraw" onclick="drawCard()" id="btnDraw">Sortear carta</div>
+                <div class="btnPlay inactive" onclick="playGame()" id="btnPlay">Jogar</div>
             </div>
             <div class="score">Pontos: <input class="machineScore" type="text" value="0" readonly></div>
         </div>

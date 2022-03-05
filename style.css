@@ -34,13 +34,6 @@
     --msg-bg-win: rgba(0, 150, 0, 0.8);
     --msg-bg-lose: rgba(255, 0, 0, 0.8);
     --msg-bg-draw: rgba(150, 150, 0, 0.8);
-    /* --card-content-clr: #00ff00; */
-    /* --card-header-clr: #ff0066; */
-    /* --card-img-clr: #0000ff; */
-    /* --card-atrib-clr: #6600ff; */
-    /* --actived-atrib-clr: red; */
-    /* --card-height: 360px; */
-    /* --card-width: 280px; */
 
     --pb-dimensions: 250px;
     --pb-card-dimen: 120px;
@@ -87,7 +80,7 @@ body {
     transition: all 1s ease;
 }
 
-.pokeball-bg-center {
+.pb-bg-center {
     position: relative;
     display: flex;
     justify-content: center;
@@ -219,7 +212,7 @@ body {
     background-size: cover;
 }
 
-.content.fliped .backCard .pokeballCard {
+.content.fliped .backCard .pokeball-card {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -236,7 +229,7 @@ body {
     box-shadow: 0px 0px 10px #f8f8f8;
 }
 
-.content.fliped .backCard .pokeballCard::before {
+.content.fliped .backCard .pokeball-card::before {
     content: "";
     position: absolute;
     left: 0;
@@ -249,7 +242,7 @@ body {
     border-bottom: 3px solid #000;
 }
 
-.content.fliped .backCard .pokeballCard-center {
+.content.fliped .backCard .pb-card-center {
     position: relative;
     display: flex;
     justify-content: center;
@@ -389,7 +382,7 @@ body {
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.7)) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5)) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
-.card .content .cardAtribs {
+.card .content .attributeWrapper {
     position: relative;
     width: 100%;
     display: grid;
@@ -408,27 +401,27 @@ body {
     font-weight: 600;
 }
 
-.card .content.fliped .cardAtribs {
+.card .content.fliped .attributeWrapper {
     display: none;
 }
 
-.content .cardAtribs .atrib {
+.content .attributeWrapper .attribute {
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
     
 }
 
-.machine .cardAtribs .atrib {
+.machine .attributeWrapper .attribute {
     cursor: initial;
 }
 
-.content .cardAtribs input {
+.content .attributeWrapper input {
     position: absolute;
     appearance: none;
 }
 
-.content .cardAtribs .atrib div {
+.content .attributeWrapper .attribute div {
     border: 2px solid #000;
     border-radius: 5px;
     padding: 2px;
@@ -439,14 +432,14 @@ body {
     2px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-.content .cardAtribs .atrib div:hover {
+.content .attributeWrapper .attribute div:hover {
     box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.25),
     inset 2px 2px 5px rgba(255, 255, 255, 0.15),
     -2px -2px 5px rgba(255, 255, 255, 0.25),
     2px 2px 5px rgba(255, 255, 255, 0.15);
 }
 
-.content .cardAtribs .atrib div.atribName {
+.content .attributeWrapper .attribute div.attributeName {
     background: transparent;
     border: none;
     box-shadow: none;
@@ -456,8 +449,8 @@ body {
     0px 0px 2px #f8f8f8;
 }
 
-.content .cardAtribs .atrib div.actived,
-.content .cardAtribs .atrib input:checked~div {
+.content .attributeWrapper .attribute div.actived,
+.content .attributeWrapper .attribute input:checked~div {
     border: 1px solid var(--active-border);
     font-weight: 600;
     box-shadow: inset 0 0 3px var(--active-clr),
@@ -465,21 +458,21 @@ body {
     0px 0px 5px var(--active-clr);
 }
 
-.content .cardAtribs .atrib input:checked~div.buff {
+.content .attributeWrapper .attribute input:checked~div.buff {
     border: 1px solid var(--buff-border);
     box-shadow: inset 0 0 3px var(--buff-clr),
     inset 0 0 5px var(--buff-clr),
     0px 0px 5px var(--buff-clr);
 }
 
-.content .cardAtribs .atrib input:checked~div.debuff {
+.content .attributeWrapper .attribute input:checked~div.debuff {
     border: 1px solid var(--debuff-border);
     box-shadow: inset 0 0 3px var(--debuff-clr),
     inset 0 0 5px var(--debuff-clr),
     0px 0px 5px var(--debuff-clr);
 }
 
-.container .footer {
+.container .controlWrapper {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -488,7 +481,7 @@ body {
     width: 100%;
 }
 
-.footer .btns {
+.controlWrapper .btns {
     position: relative;
     display: flex;
     justify-content: center;
@@ -496,8 +489,8 @@ body {
     width: 200px;
 }
 
-.container .footer .btnSortear,
-.container .footer .btnJogar {
+.container .controlWrapper .btnDraw,
+.container .controlWrapper .btnPlay {
     position: relative;
     display: flex;
     justify-content: center;
@@ -521,25 +514,25 @@ body {
     border-radius: 10px;
 }
 
-.container .footer .btnSortear:hover,
-.container .footer .btnJogar:hover {
+.container .controlWrapper .btnDraw:hover,
+.container .controlWrapper .btnPlay:hover {
     background-color: var(--btn-hover);
 }
 
-.container .footer .btnSortear:active,
-.container .footer .btnJogar:active {
+.container .controlWrapper .btnDraw:active,
+.container .controlWrapper .btnPlay:active {
     box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.25),
     inset 4px 4px 10px rgba(0, 0, 0, 0.5),
     -4px -4px 10px rgba(0, 0, 0, 0.25),
     4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.container .footer .btnSortear.inactive,
-.container .footer .btnJogar.inactive {
+.container .controlWrapper .btnDraw.inactive,
+.container .controlWrapper .btnPlay.inactive {
     display: none;
 }
 
-.footer .score {
+.controlWrapper .score {
     position: relative;
     display: flex;
     justify-content: center;
@@ -551,7 +544,7 @@ body {
     margin: 10px;
 }
 
-.footer .score input {
+.controlWrapper .score input {
     position: relative;
     display: flex;
     text-align: center;

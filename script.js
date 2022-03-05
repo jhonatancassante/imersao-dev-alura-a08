@@ -1,42 +1,42 @@
-let btnSortear = document.querySelector(".btnSortear");
-let btnJogar = document.querySelector(".btnJogar");
-let contentP = document.querySelector(".player .content");
-let contentM = document.querySelector(".machine .content");
+let btnDraw = document.querySelector(".btnDraw");
+let btnPlay = document.querySelector(".btnPlay");
+let contentPlayer = document.querySelector(".player .content");
+let contentMachine = document.querySelector(".machine .content");
 let subtitle = document.querySelector(".subtitle");
 
 var deck = pokemons();
 var cardPlayer = 0;
 var cardMachine = 0;
-var atribSelected = "";
+var attributeSelected = "";
 var gameStatus = 0;
 var foilChance = 1;
 var typeSelected = "";
 var newGame = 0;
 
-function tirarCarta() {
+function drawCard() {
     clearBonus();
 
-    if (!btnSortear.classList.contains("inactive")) {
+    if (!btnDraw.classList.contains("inactive")) {
         newGame = 1;
         gameStatus = -1;
         subtitle.innerHTML = '';
         subtitle.innerHTML = 'Clique em um atributo e tipo para escolher qual jogar...';
-        cleanSelectionAtrib();
+        cleanSelectedAttribute();
 
         if (deck.length > 1) {
-            cardMachine = sortearCarta();
-            cardPlayer = sortearCarta();
+            cardMachine = shuffleCard();
+            cardPlayer = shuffleCard();
             pokeballSpin();
 
-            contentM.classList.add("fliped");
-            btnSortear.classList.add("inactive");
-            contentP.classList.remove("fliped");
+            contentMachine.classList.add("fliped");
+            btnDraw.classList.add("inactive");
+            contentPlayer.classList.remove("fliped");
             foilGeneretor();
-            exibirCarta(cardPlayer, ".player");
+            showCard(cardPlayer, ".player");
             selectType(1);
         } else {
             deck = pokemons();
-            imprimirMensagem("As cartas acabaram, sorteie novamente para embaralhar o deck.", 3000);
+            printMsg("As cartas acabaram, sorteie novamente para embaralhar o deck.", 3000);
         }
         setTimeout(() => {
             pokeballSpin();
@@ -47,26 +47,28 @@ function tirarCarta() {
 }
 
 function clearBonus() {
-    if (atribSelected != "") {
-        var atribSel = document.querySelector(".player ." + atribSelected);
+    if (attributeSelected != "") {
+        var attribSel = document.querySelector(".player ." + attributeSelected);
         var multiplier = document.querySelector(".multiplier");
-        atribSel.classList.remove("buff");
-        atribSel.classList.remove("debuff");
+        attribSel.classList.remove("buff");
+        attribSel.classList.remove("debuff");
         multiplier.classList.remove("buff");
         multiplier.classList.remove("debuff");
-        atribSelected = "";
+        attributeSelected = "";
         console.clear();
         multiplier.innerHTML = "";
     }
+
+    return;
 }
 
-function cleanSelectionAtrib() {
-    var atributo = document.getElementsByName("atributos");
+function cleanSelectedAttribute() {
+    var attributes = document.getElementsByName("attributes");
     var content = document.querySelector(".machine .content");
 
     content.style.backgroundImage = "none";
 
-    for (var item of atributo) {
+    for (var item of attributes) {
         if (item.checked) {
             item.checked = false;
         }
@@ -75,14 +77,14 @@ function cleanSelectionAtrib() {
     return;
 }
 
-function sortearCarta() {
-    var indice = parseInt(Math.random() * deck.length);
-    var carta = 0;
+function shuffleCard() {
+    var index = parseInt(Math.random() * deck.length);
+    var card = 0;
 
-    carta = deck[indice];
-    deck.splice(indice, 1);
+    card = deck[index];
+    deck.splice(index, 1);
 
-    return carta;
+    return card;
 }
 
 function pokeballSpin() {
@@ -106,7 +108,7 @@ function foilGeneretor() {
     return;
 }
 
-function exibirCarta(carta, who) {
+function showCard(card, who) {
     var content = document.querySelector(who + " .content");
     var cardNumber = document.querySelector(who + " .cardNumber");
     var cardName = document.querySelector(who + " .cardName");
@@ -116,10 +118,10 @@ function exibirCarta(carta, who) {
     var cardImg = document.querySelector(who + " .cardImg");
     var pokeImage = document.createElement("img");
     var hp = document.querySelector(who + " .hp");
-    var atk = document.querySelector(who + " .ataque");
-    var def = document.querySelector(who + " .defesa");
-    var spatk = document.querySelector(who + " .spAtaque");
-    var spdef = document.querySelector(who + " .spDefesa");
+    var atk = document.querySelector(who + " .attack");
+    var def = document.querySelector(who + " .defense");
+    var spAtk = document.querySelector(who + " .spAttack");
+    var spDef = document.querySelector(who + " .spDefense");
     var speed = document.querySelector(who + " .speed");
 
     cardNumber.innerHTML = '';
@@ -130,55 +132,44 @@ function exibirCarta(carta, who) {
     hp.innerHTML = '';
     atk.innerHTML = '';
     def.innerHTML = '';
-    spatk.innerHTML = '';
-    spdef.innerHTML = '';
+    spAtk.innerHTML = '';
+    spDef.innerHTML = '';
     speed.innerHTML = '';
 
     typeOne.appendChild(typeOneImage);
     cardImg.appendChild(pokeImage);
 
-    cardNumber.innerHTML = carta.number;
-    cardName.innerHTML = carta.nome;
-    typeOneImage.src = carta.links.linkTipo1;
-    typeOneImage.alt = carta.tipos.primario;
+    cardNumber.innerHTML = card.number;
+    cardName.innerHTML = card.name;
+    typeOneImage.src = card.links.linkType1;
+    typeOneImage.alt = card.types.primary;
 
     typeOne.classList.remove("typeActive");
     typeTwo.classList.remove("typeActive");
 
-    if (carta.tipos.secundario != "") {
+    if (card.types.secondary != "") {
         var typeTwoImage = document.createElement("img");
 
         typeTwo.appendChild(typeTwoImage);
 
-        typeTwoImage.src = carta.links.linkTipo2;
-        typeTwoImage.alt = carta.tipos.secundario;
+        typeTwoImage.src = card.links.linkType2;
+        typeTwoImage.alt = card.types.secondary;
     }
 
-    pokeImage.src = carta.links.linkImg;
-    pokeImage.alt = carta.nome;
-    hp.innerHTML = carta.atributos.hp;
-    atk.innerHTML = carta.atributos.ataque;
-    def.innerHTML = carta.atributos.defesa;
-    spatk.innerHTML = carta.atributos.spAtaque;
-    spdef.innerHTML = carta.atributos.spDefesa;
-    speed.innerHTML = carta.atributos.speed;
+    pokeImage.src = card.links.linkImg;
+    pokeImage.alt = card.name;
+    hp.innerHTML = card.attributes.hp;
+    atk.innerHTML = card.attributes.attack;
+    def.innerHTML = card.attributes.defense;
+    spAtk.innerHTML = card.attributes.spAttack;
+    spDef.innerHTML = card.attributes.spDefense;
+    speed.innerHTML = card.attributes.speed;
 
-    cardImg.style.backgroundImage = "url(" + carta.links.linkBg + ")";
-    cardImg.style.border = "2px solid " + typeColor(carta.tipos.primario);
-    content.style.backgroundImage = cardColor(carta.tipos.primario, carta.tipos.secundario);
+    cardImg.style.backgroundImage = "url(" + card.links.linkBg + ")";
+    cardImg.style.border = "2px solid " + typeColor(card.types.primary);
+    content.style.backgroundImage = cardColor(card.types.primary, card.types.secondary);
 
     return;
-}
-
-function cardColor(primario, secundario) {
-    var color1 = typeColor(primario);
-    var color2 = typeColor(secundario);
-
-    if (secundario === "") {
-        color2 = typeColor(primario);
-    }
-
-    return "linear-gradient(" + color1 + " 0%, " + color1 + " 45%, " + color2 + " 75%, " + color2 + " 100%)";
 }
 
 function typeColor(type) {
@@ -246,147 +237,15 @@ function typeColor(type) {
     return color;
 }
 
-function atribClicked(tagValue) {
-    atribSelected = tagValue;
+function cardColor(primary, secondary) {
+    var color1 = typeColor(primary);
+    var color2 = typeColor(secondary);
 
-    verifySelections();
-}
-
-function verifySelections() {
-    if (atribSelected != "" && typeSelected != "" && newGame == 1) {
-        btnJogar.classList.remove("inactive");
-    }
-}
-
-function jogar() {
-    if (!btnJogar.classList.contains("inactive")) {
-
-        var valorJogador = cardPlayer.atributos[atribSelected];
-        var valorMaquina = cardMachine.atributos[atribSelected];
-        var selectMachine = document.querySelector(".machine ." + atribSelected);
-        var msgTime = 2000;
-        var atribSel = document.querySelector(".player div." + atribSelected);
-        var bonusAplicado = Math.round(bonusCalc());
-
-        valorJogador = Math.round(valorJogador * bonusAplicado);
-        atribSel.innerHTML = valorJogador;
-
-        aplyMultiplier(atribSel,bonusAplicado);
-
-        if (valorJogador > valorMaquina) {
-            gameStatus = 3;
-            imprimirMensagem("Você venceu!", msgTime);
-            changeScore(3, 0);
-        } else if (valorJogador < valorMaquina) {
-            gameStatus = 0;
-            imprimirMensagem("Você perdeu!", msgTime);
-            changeScore(0, 3);
-        } else {
-            gameStatus = 1;
-            imprimirMensagem("Deu empate!", msgTime);
-            changeScore(1, 1);
-        }
-
-        btnSortear.classList.remove("inactive");
-        contentM.classList.remove("fliped");
-        selectMachineAtrib(selectMachine);
-        exibirCarta(cardMachine, ".machine");
-        btnJogar.classList.add("inactive");
-        typeSelected = "";
-        subtitle.innerHTML = '';
-        newGame = 0;
-        subtitle.innerHTML = 'Clique no botão Sortear Carta para jogar novamente...';
+    if (secondary === "") {
+        color2 = typeColor(primary);
     }
 
-    return;
-}
-
-function aplyMultiplier(atribSel, bonusAplicado) {
-    var multiplier = document.querySelector(".multiplier");
-
-    if (bonusAplicado > 1) {
-        atribSel.classList.add("buff");
-        multiplier.classList.add("buff");
-        multiplier.innerHTML = "x" + bonusAplicado;
-    } else if (bonusAplicado < 1) {
-        atribSel.classList.add("debuff");
-        multiplier.classList.add("debuff");
-        multiplier.innerHTML = "x" + bonusAplicado;
-    }
-
-    return;
-}
-
-function selectMachineAtrib(selectMachine) {
-    var hp = document.querySelector(".machine .hp");
-    var atk = document.querySelector(".machine .ataque");
-    var def = document.querySelector(".machine .defesa");
-    var spatk = document.querySelector(".machine .spAtaque");
-    var spdef = document.querySelector(".machine .spDefesa");
-    var speed = document.querySelector(".machine .speed");
-
-    hp.classList.remove("actived");
-    atk.classList.remove("actived");
-    def.classList.remove("actived");
-    spatk.classList.remove("actived");
-    spdef.classList.remove("actived");
-    speed.classList.remove("actived");
-    selectMachine.classList.add("actived");
-
-    return;
-}
-
-function imprimirMensagem(mensagem, time) {
-    let tagBody = document.querySelector("body");
-
-    let tagSpan = document.createElement("span");
-    let tagDiv1 = document.createElement("div");
-    let tagDiv2 = document.createElement("div");
-
-    tagDiv2.appendChild(tagSpan);
-    tagDiv1.appendChild(tagDiv2);
-    tagBody.appendChild(tagDiv1);
-
-    tagDiv1.classList.add("modal-mensagem");
-    tagDiv1.classList.add("center");
-
-    tagSpan.innerHTML = mensagem;
-    tagDiv2.classList.add("animate__animated");
-    tagDiv2.classList.add("animate__pulse");
-    tagDiv2.classList.add("center");
-
-    if (gameStatus == 3) {
-        tagSpan.classList.add("msgWin");
-    }
-    else if (gameStatus == 0) {
-        tagSpan.classList.add("msgLose");
-    }
-    else if (gameStatus == 1) {
-        tagSpan.classList.add("msgDraw");
-    }
-    else {
-        tagSpan.classList.add("msgStandard");
-    }
-
-    setTimeout(() => {
-        tagDiv1.remove();
-    }, time);
-
-    return;
-}
-
-function changeScore(pPoint, mPoint) {
-    var playerScore = document.querySelector(".playerScore");
-    var machineScore = document.querySelector(".machineScore");
-    var pointsTemp = 0;
-
-    pointsTemp = parseInt(playerScore.value);
-    pointsTemp += pPoint;
-    playerScore.value = pointsTemp;
-
-    pointsTemp = parseInt(machineScore.value);
-    pointsTemp += mPoint;
-    machineScore.value = pointsTemp;
+    return "linear-gradient(" + color1 + " 0%, " + color1 + " 45%, " + color2 + " 75%, " + color2 + " 100%)";
 }
 
 function selectType(typeNum) {
@@ -396,14 +255,69 @@ function selectType(typeNum) {
     if (typeNum == 1) {
         typeOne.classList.add("typeActive");
         typeTwo.classList.remove("typeActive");
-        typeSelected = cardPlayer.tipos.primario;
+        typeSelected = cardPlayer.types.primary;
     } else if (typeNum == 2) {
         typeOne.classList.remove("typeActive");
         typeTwo.classList.add("typeActive");
-        typeSelected = cardPlayer.tipos.secundario;
+        typeSelected = cardPlayer.types.secondary;
     }
 
     verifySelections();
+
+    return;
+}
+
+function attributeClicked(tagValue) {
+    attributeSelected = tagValue;
+
+    verifySelections();
+}
+
+function verifySelections() {
+    if (attributeSelected != "" && typeSelected != "" && newGame == 1) {
+        btnPlay.classList.remove("inactive");
+    }
+}
+
+function playGame() {
+    if (!btnPlay.classList.contains("inactive")) {
+
+        var valuePlayer = cardPlayer.attributes[attributeSelected];
+        var valueMachine = cardMachine.attributes[attributeSelected];
+        var selectMachine = document.querySelector(".machine ." + attributeSelected);
+        var msgTime = 2000;
+        var attribSel = document.querySelector(".player div." + attributeSelected);
+        var bonusApplied = Math.round(bonusCalc());
+
+        valuePlayer = Math.round(valuePlayer * bonusApplied);
+        attribSel.innerHTML = valuePlayer;
+
+        applyMultiplier(attribSel,bonusApplied);
+
+        if (valuePlayer > valueMachine) {
+            gameStatus = 3;
+            printMsg("Você venceu!", msgTime);
+            changeScore(3, 0);
+        } else if (valuePlayer < valueMachine) {
+            gameStatus = 0;
+            printMsg("Você perdeu!", msgTime);
+            changeScore(0, 3);
+        } else {
+            gameStatus = 1;
+            printMsg("Deu empate!", msgTime);
+            changeScore(1, 1);
+        }
+
+        btnDraw.classList.remove("inactive");
+        contentMachine.classList.remove("fliped");
+        selectMachineAttribute(selectMachine);
+        showCard(cardMachine, ".machine");
+        btnPlay.classList.add("inactive");
+        typeSelected = "";
+        subtitle.innerHTML = '';
+        newGame = 0;
+        subtitle.innerHTML = 'Clique no botão Sortear card para jogar novamente...';
+    }
 
     return;
 }
@@ -417,13 +331,13 @@ function bonusCalc() {
 
     index1 = getTypeIndex(typeSelected);
     // console.log("Index 1: " + index1);
-    index2 = getTypeIndex(cardMachine.tipos.primario);
+    index2 = getTypeIndex(cardMachine.types.primary);
     // console.log("Index 2: " + index2);
     type1Bonus = getTypeBunos(index1, index2);
     // console.log("Bonus 1: " + type1Bonus);
 
-    if (cardMachine.tipos.secundario != "") {
-        index2 = getTypeIndex(cardMachine.tipos.secundario);
+    if (cardMachine.types.secondary != "") {
+        index2 = getTypeIndex(cardMachine.types.secondary);
         // console.log("Index 3: " + index2);
         type2Bonus = getTypeBunos(index1, index2);
         // console.log("Bonus 2: " + type2Bonus);
@@ -525,4 +439,98 @@ function getTypeBunos(typeIndAtk, typeIndDef) {
     var bonus = typesDamage[typeIndAtk][typeIndDef];
 
     return bonus;
+}
+
+function applyMultiplier(attribSel, bonusApplied) {
+    var multiplier = document.querySelector(".multiplier");
+
+    if (bonusApplied > 1) {
+        attribSel.classList.add("buff");
+        multiplier.classList.add("buff");
+        multiplier.innerHTML = "x" + bonusApplied;
+    } else if (bonusApplied < 1) {
+        attribSel.classList.add("debuff");
+        multiplier.classList.add("debuff");
+        multiplier.innerHTML = "x" + bonusApplied;
+    }
+
+    return;
+}
+
+function printMsg(mensagem, time) {
+    let tagBody = document.querySelector("body");
+
+    let tagSpan = document.createElement("span");
+    let tagDiv1 = document.createElement("div");
+    let tagDiv2 = document.createElement("div");
+
+    tagDiv2.appendChild(tagSpan);
+    tagDiv1.appendChild(tagDiv2);
+    tagBody.appendChild(tagDiv1);
+
+    tagDiv1.classList.add("modal-mensagem");
+    tagDiv1.classList.add("center");
+
+    tagSpan.innerHTML = mensagem;
+    tagDiv2.classList.add("animate__animated");
+    tagDiv2.classList.add("animate__pulse");
+    tagDiv2.classList.add("center");
+
+    msgTypeColor(tagSpan);
+
+    setTimeout(() => {
+        tagDiv1.remove();
+    }, time);
+
+    return;
+}
+
+function msgTypeColor(tagSpan) {
+    if (gameStatus == 3) {
+        tagSpan.classList.add("msgWin");
+    }
+    else if (gameStatus == 0) {
+        tagSpan.classList.add("msgLose");
+    }
+    else if (gameStatus == 1) {
+        tagSpan.classList.add("msgDraw");
+    }
+    else {
+        tagSpan.classList.add("msgStandard");
+    }
+
+    return;
+}
+
+function changeScore(playerPoint, machinePoint) {
+    var playerScore = document.querySelector(".playerScore");
+    var machineScore = document.querySelector(".machineScore");
+    var pointsTemp = 0;
+
+    pointsTemp = parseInt(playerScore.value);
+    pointsTemp += playerPoint;
+    playerScore.value = pointsTemp;
+
+    pointsTemp = parseInt(machineScore.value);
+    pointsTemp += machinePoint;
+    machineScore.value = pointsTemp;
+}
+
+function selectMachineAttribute(selectMachine) {
+    var hp = document.querySelector(".machine .hp");
+    var atk = document.querySelector(".machine .attack");
+    var def = document.querySelector(".machine .defense");
+    var spAtk = document.querySelector(".machine .spAttack");
+    var spDef = document.querySelector(".machine .spDefense");
+    var speed = document.querySelector(".machine .speed");
+
+    hp.classList.remove("actived");
+    atk.classList.remove("actived");
+    def.classList.remove("actived");
+    spAtk.classList.remove("actived");
+    spDef.classList.remove("actived");
+    speed.classList.remove("actived");
+    selectMachine.classList.add("actived");
+
+    return;
 }
