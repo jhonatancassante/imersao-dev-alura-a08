@@ -4,14 +4,14 @@ let contentPlayer = document.querySelector(".player .content");
 let contentMachine = document.querySelector(".machine .content");
 let subtitle = document.querySelector(".subtitle");
 
-var deck = pokemons();
-var cardPlayer = 0;
-var cardMachine = 0;
-var attributeSelected = "";
-var gameStatus = 0;
-var foilChance = 1;
-var typeSelected = "";
-var newGame = 0;
+let deck = pokemons();
+let cardPlayer = 0;
+let cardMachine = 0;
+let attributeSelected = "";
+let gameStatus = 0;
+let foilChance = 1;
+let typeSelected = "";
+let newGame = 0;
 
 function drawCard() {
     clearBonus();
@@ -48,8 +48,8 @@ function drawCard() {
 
 function clearBonus() {
     if (attributeSelected != "") {
-        var attribSel = document.querySelector(".player ." + attributeSelected);
-        var multiplier = document.querySelector(".multiplier");
+        let attribSel = document.querySelector(".player ." + attributeSelected);
+        let multiplier = document.querySelector(".multiplier");
         attribSel.classList.remove("buff");
         attribSel.classList.remove("debuff");
         multiplier.classList.remove("buff");
@@ -63,12 +63,12 @@ function clearBonus() {
 }
 
 function cleanSelectedAttribute() {
-    var attributes = document.getElementsByName("attributes");
-    var content = document.querySelector(".machine .content");
+    let attributes = document.getElementsByName("attributes");
+    let content = document.querySelector(".machine .content");
 
     content.style.backgroundImage = "none";
 
-    for (var item of attributes) {
+    for (let item of attributes) {
         if (item.checked) {
             item.checked = false;
         }
@@ -78,8 +78,8 @@ function cleanSelectedAttribute() {
 }
 
 function shuffleCard() {
-    var index = parseInt(Math.random() * deck.length);
-    var card = 0;
+    let index = parseInt(Math.random() * deck.length);
+    let card = 0;
 
     card = deck[index];
     deck.splice(index, 1);
@@ -88,7 +88,7 @@ function shuffleCard() {
 }
 
 function pokeballSpin() {
-    var pokeball = document.querySelector(".pokeball-bg");
+    let pokeball = document.querySelector(".pokeball-bg");
 
     pokeball.classList.toggle("spinPokeball");
 
@@ -96,8 +96,8 @@ function pokeballSpin() {
 }
 
 function foilGeneretor() {
-    var card = document.querySelector(".player");
-    var percent = parseInt(Math.random() * 100);
+    let card = document.querySelector(".player");
+    let percent = parseInt(Math.random() * 100);
 
     card.classList.remove("foil");
 
@@ -109,20 +109,20 @@ function foilGeneretor() {
 }
 
 function showCard(card, who) {
-    var content = document.querySelector(who + " .content");
-    var cardNumber = document.querySelector(who + " .cardNumber");
-    var cardName = document.querySelector(who + " .cardName");
-    var typeOne = document.querySelector(who + " .typeOne");
-    var typeOneImage = document.createElement("img");
-    var typeTwo = document.querySelector(who + " .typeTwo");
-    var cardImg = document.querySelector(who + " .cardImg");
-    var pokeImage = document.createElement("img");
-    var hp = document.querySelector(who + " .hp");
-    var atk = document.querySelector(who + " .attack");
-    var def = document.querySelector(who + " .defense");
-    var spAtk = document.querySelector(who + " .spAttack");
-    var spDef = document.querySelector(who + " .spDefense");
-    var speed = document.querySelector(who + " .speed");
+    let content = document.querySelector(who + " .content");
+    let cardNumber = document.querySelector(who + " .cardNumber");
+    let cardName = document.querySelector(who + " .cardName");
+    let typeOne = document.querySelector(who + " .typeOne");
+    let typeOneImage = document.createElement("img");
+    let typeTwo = document.querySelector(who + " .typeTwo");
+    let cardImg = document.querySelector(who + " .cardImg");
+    let pokeImage = document.createElement("img");
+    let hp = document.querySelector(who + " .hp");
+    let atk = document.querySelector(who + " .attack");
+    let def = document.querySelector(who + " .defense");
+    let spAtk = document.querySelector(who + " .spAttack");
+    let spDef = document.querySelector(who + " .spDefense");
+    let speed = document.querySelector(who + " .speed");
 
     cardNumber.innerHTML = '';
     cardName.innerHTML = '';
@@ -148,7 +148,7 @@ function showCard(card, who) {
     typeTwo.classList.remove("typeActive");
 
     if (card.types.secondary != "") {
-        var typeTwoImage = document.createElement("img");
+        let typeTwoImage = document.createElement("img");
 
         typeTwo.appendChild(typeTwoImage);
 
@@ -173,7 +173,7 @@ function showCard(card, who) {
 }
 
 function typeColor(type) {
-    var color = "";
+    let color = "";
 
     switch (type) {
         case 'Bug':
@@ -238,8 +238,8 @@ function typeColor(type) {
 }
 
 function cardColor(primary, secondary) {
-    var color1 = typeColor(primary);
-    var color2 = typeColor(secondary);
+    let color1 = typeColor(primary);
+    let color2 = typeColor(secondary);
 
     if (secondary === "") {
         color2 = typeColor(primary);
@@ -249,8 +249,8 @@ function cardColor(primary, secondary) {
 }
 
 function selectType(typeNum) {
-    var typeOne = document.querySelector(".typeOne");
-    var typeTwo = document.querySelector(".typeTwo");
+    let typeOne = document.querySelector(".typeOne");
+    let typeTwo = document.querySelector(".typeTwo");
 
     if (typeNum == 1) {
         typeOne.classList.add("typeActive");
@@ -282,12 +282,12 @@ function verifySelections() {
 function playGame() {
     if (!btnPlay.classList.contains("inactive")) {
 
-        var valuePlayer = cardPlayer.attributes[attributeSelected];
-        var valueMachine = cardMachine.attributes[attributeSelected];
-        var selectMachine = document.querySelector(".machine ." + attributeSelected);
-        var msgTime = 2000;
-        var attribSel = document.querySelector(".player div." + attributeSelected);
-        var bonusApplied = Math.round(bonusCalc());
+        let valuePlayer = cardPlayer.attributes[attributeSelected];
+        let valueMachine = cardMachine.attributes[attributeSelected];
+        let selectMachine = document.querySelector(".machine ." + attributeSelected);
+        let msgTime = 2000;
+        let attribSel = document.querySelector(".player div." + attributeSelected);
+        let bonusApplied = Math.round(bonusCalc());
 
         valuePlayer = Math.round(valuePlayer * bonusApplied);
         attribSel.innerHTML = valuePlayer;
@@ -323,11 +323,11 @@ function playGame() {
 }
 
 function bonusCalc() {
-    var bonusDamage = 0.00;
-    var type1Bonus = 0.00;
-    var type2Bonus = 1.00;
-    var index1 = 0;
-    var index2 = 0;
+    let bonusDamage = 0.00;
+    let type1Bonus = 0.00;
+    let type2Bonus = 1.00;
+    let index1 = 0;
+    let index2 = 0;
 
     index1 = getTypeIndex(typeSelected);
     // console.log("Index 1: " + index1);
@@ -350,7 +350,7 @@ function bonusCalc() {
 }
 
 function getTypeIndex(type) {
-    var index = 0;
+    let index = 0;
 
     switch (type) {
         case 'Bug':
@@ -436,13 +436,13 @@ function getTypeBunos(typeIndAtk, typeIndDef) {
 /* STEE */[1.00, 1.00, 1.00, 0.50, 2.00, 1.00, 0.50, 1.00, 1.00, 1.00, 1.00, 2.00, 1.00, 1.00, 1.00, 2.00, 0.50, 0.50],
 /* WATE */[1.00, 1.00, 0.50, 1.00, 1.00, 1.00, 2.00, 1.00, 1.00, 0.50, 2.00, 1.00, 1.00, 1.00, 1.00, 2.00, 1.00, 0.50]
     ];
-    var bonus = typesDamage[typeIndAtk][typeIndDef];
+    let bonus = typesDamage[typeIndAtk][typeIndDef];
 
     return bonus;
 }
 
 function applyMultiplier(attribSel, bonusApplied) {
-    var multiplier = document.querySelector(".multiplier");
+    let multiplier = document.querySelector(".multiplier");
 
     if (bonusApplied > 1) {
         attribSel.classList.add("buff");
@@ -503,9 +503,9 @@ function msgTypeColor(tagSpan) {
 }
 
 function changeScore(playerPoint, machinePoint) {
-    var playerScore = document.querySelector(".playerScore");
-    var machineScore = document.querySelector(".machineScore");
-    var pointsTemp = 0;
+    let playerScore = document.querySelector(".playerScore");
+    let machineScore = document.querySelector(".machineScore");
+    let pointsTemp = 0;
 
     pointsTemp = parseInt(playerScore.value);
     pointsTemp += playerPoint;
@@ -517,12 +517,12 @@ function changeScore(playerPoint, machinePoint) {
 }
 
 function selectMachineAttribute(selectMachine) {
-    var hp = document.querySelector(".machine .hp");
-    var atk = document.querySelector(".machine .attack");
-    var def = document.querySelector(".machine .defense");
-    var spAtk = document.querySelector(".machine .spAttack");
-    var spDef = document.querySelector(".machine .spDefense");
-    var speed = document.querySelector(".machine .speed");
+    let hp = document.querySelector(".machine .hp");
+    let atk = document.querySelector(".machine .attack");
+    let def = document.querySelector(".machine .defense");
+    let spAtk = document.querySelector(".machine .spAttack");
+    let spDef = document.querySelector(".machine .spDefense");
+    let speed = document.querySelector(".machine .speed");
 
     hp.classList.remove("actived");
     atk.classList.remove("actived");
